@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paris – Luxury Destinations & Premium Estates</title>
+        <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        
+
+<link rel="stylesheet" href="main-global-body.css">
+ <body data-page="paris">
+<!-- Luxury Preloader -->
+<div id="lux-loader">
+    <div class="loader-inner">
+        <img src="https://i.postimg.cc/your-logo.png" alt="Aryan Singh Logo" class="loader-logo">
+        <div class="loader-ring"></div>
+    </div>
+</div>
+        <nav class="master-pill-nav">
+    <div class="pill-inner">
+        <div id="master-menu" style="display:none;"> <!-- must match 'master-menu' -->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+        <div class="pill-logo">
+            PARIS
+        <span>CITY</span></div>
+
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <div class="toggle-icon">
+                <i id="theme-icon" class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="menu-btn" onclick="togglePremiumMenu()">
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+</div>
+
+<nav class="side-nav" id="sideNav">
+  <div class="nav-header">
+    <h2 class="nav-logo">PARIS_<span>ESTATES</span></h2>
+  </div>
+  <ul class="nav-links">
+  <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+  
+  <li><a href="london.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> London</a></li>
+  <li><a href="new-york.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> New York</a></li>
+  <li><a href="shanghai.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Shanghai</a></li>
+  <li><a href="dubai.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Dubai</a></li>
+  <li><a href="#homepage" target="_blank" rel="noopener noreferrer"><i class="fas fa-images"></i> Gallery</a></li>
+  <li><a href="exclusive.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-gem"></i> Exclusive</a></li>
+  <li><a href="faq.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-question-circle"></i> FAQ</a></li>
+  <li><a href="contact.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Contact</a></li>
+</ul>
+  <div class="nav-footer">
+    <p>© 2026 Premium Collection</p>
+  </div>
+</nav>
+
+<div class="menu-blur" id="menuBlur" onclick="togglePremiumMenu()"></div>
+
+
+    <div class="banner-hero">
+    <div class="banner-overlay"></div>
+
+    <img src="https://i.postimg.cc/Dztctzny/diogo_fagundes_db_BKe_N1s8GY_unsplash.jpg" 
+         alt="Luxury Estate Background" class="banner-img">
+
+    <div class="banner-content">
+        <h1 class="banner-title">
+        PARIS
+         <br> <span>CITY</span>
+        </h1>
+        <p class="banner-subtitle">
+           City of Love  <br>And Fashion
+        </p>
+    </div>
+</div>
+<div id="homepage"></div>
+<div class="divider"></div>
+<div class="cinzel-title">The World’s Greatest Museum of Art</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/GpNb3HJN/mika_baumeister_GCf_E4fl7t_IQ_unsplash.jpg" alt="Louvre Museum Exterior">
+        <div class="lux-overlay">
+          <h2>LOUVRE MUSEUM</h2>
+          <p>The largest and most visited art museum in the world.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/gkPk6L9H/chris_karidis_PIOq_HJG5a1U_unsplash.jpg" alt="Glass Pyramid">
+        <div class="lux-overlay">
+          <h2>GLASS PYRAMID</h2>
+          <p>A modern architectural icon at the museum’s entrance.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/BbfsDkzQ/chanelle_JEMBJayy_CA0_unsplash.jpg" alt="Museum Interior">
+        <div class="lux-overlay">
+          <h2>TIMELESS COLLECTIONS</h2>
+          <p>Home to centuries of artistic masterpieces.</p>
+        </div>
+      </div>
+
+     </div>
+
+    <!-- ARROWS -->
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this,-1)">❮</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this,1)">❯</button>
+
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+
+<div class="divider"></div>
+
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The Louvre Museum in Paris is the world’s largest art museum and a historic monument, founded in 1793. Home to thousands of works including the Mona Lisa and the Venus de Milo, it showcases art from ancient civilizations to modern times, attracting millions of visitors each year.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">1st arrondissement, Paris, France</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Tue–Sun 09:00 – 18:00</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Founded</span>
+                <span class="info-value">1793</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Iconic Artworks: View masterpieces like the Mona Lisa, Winged Victory, and Venus de Milo.<br>
+                Guided Tours: Join expert-led tours to explore the museum’s rich history and hidden gems.<br>
+                Architectural Beauty: Admire the historic Louvre Palace and the modern glass pyramid entrance.<br>
+                Exhibitions & Events: Regular special exhibitions provide deeper insights into art and culture.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Louvre Museum</h2>
+            <p class="cj-text">
+                The Louvre Museum is a treasure trove of art and history, spanning from ancient civilizations to the modern era. Visitors can explore world-famous masterpieces, marvel at the historic architecture, and immerse themselves in centuries of artistic achievement.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+    
+ <div class="divider"></div>
+<div class="cinzel-title">The Timeless Icon of Paris</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/7YvbMQzQ/chris_karidis_nnzk_ZNYWHa_U_unsplash.jpg" alt="Eiffel Tower">
+        <div class="lux-overlay">
+          <h2>EIFFEL TOWER</h2>
+          <p>The most iconic symbol of France.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/HnbYhdMb/anthony_delanoix_Q0_f_OL2nq_Zc_unsplash.jpg" alt="Paris Skyline">
+        <div class="lux-overlay">
+          <h2>PARIS SKYLINE</h2>
+          <p>A city defined by elegance and timeless beauty.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/xCznXntF/diogo_fagundes_db_BKe_N1s8GY_unsplash.jpg" alt="Seine River">
+        <div class="lux-overlay">
+          <h2>SEINE RIVER</h2>
+          <p>The romantic lifeline flowing through Paris.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+  <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The Eiffel Tower, completed in 1889, is one of the most recognizable landmarks in the world. Standing at 324 meters in Paris, it offers panoramic views of the city, iconic architecture, and a rich history as a symbol of French ingenuity and culture.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Champ de Mars, Paris, France</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 09:00 – 00:00</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Completed</span>
+                <span class="info-value">1889</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Observation Decks: Enjoy city views from multiple levels, including the top observation deck.<br>
+                Light Shows: Spectacular illumination at night makes it a photographer’s dream.<br>
+                Restaurants & Cafes: Dine at the tower’s restaurants for a unique culinary experience.<br>
+                Historical Significance: Learn about the construction and cultural impact of this iconic structure.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Eiffel Tower</h2>
+            <p class="cj-text">
+                The Eiffel Tower stands as an emblem of Paris and French innovation. Visitors can admire its iron lattice structure, take in breathtaking city views, and enjoy cultural and dining experiences high above the city streets.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+<div class="cinzel-title">The Triumph of Parisian Heritage</div>  
+
+<div class="luxury-container">  
+  <div class="luxury-viewport">  
+    
+    <!-- COUNTER -->  
+    <div class="lux-counter">  
+      <span class="current">01</span> /   
+      <span class="total">05</span>  
+    </div>  
+
+    <div class="luxury-wrapper" data-index="0">  
+        
+      <div class="lux-slide">  
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/Kz7pcwxS/ian_kelsall_KX5ZQklu_Q9U_unsplash.jpg" alt="Arc de Triomphe">  
+        <div class="lux-overlay">  
+          <h2>ARC DE TRIOMPHE</h2>  
+          <p>A monument honoring France’s historic victories.</p>  
+        </div>  
+      </div>  
+        
+      <div class="lux-slide">  
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/RFxbB4rk/rodrigo_kugnharski_pd_Wc5wm1STw_unsplash.jpg" alt="Champs-Élysées">  
+        <div class="lux-overlay">  
+          <h2>CHAMPS-ÉLYSÉES</h2>  
+          <p>The most famous avenue leading to the monument.</p>  
+        </div>  
+      </div>  
+
+      <div class="lux-slide">  
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/1t07R2sX/bastien_nvs_Spr_V1eq_Nrq_M_unsplash.jpg" alt="Paris City View">  
+        <div class="lux-overlay">  
+          <h2>PARIS CITYSCAPE</h2>  
+          <p>A timeless blend of culture, history, and elegance.</p>  
+        </div>  
+      </div>  
+        
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+ 
+ <div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+   <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The Arc de Triomphe is one of Paris’ most iconic monuments, commissioned by Napoleon in 1806 and completed in 1836. Standing at the western end of the Champs-Élysées, it honors those who fought and died during the French Revolutionary and Napoleonic Wars and features the Tomb of the Unknown Soldier.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Place Charles de Gaulle, Paris, France</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 10:00 – 23:00</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Completed</span>
+                <span class="info-value">1836</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Panoramic Views: Climb to the top for breathtaking views of Paris and the Champs-Élysées.<br>
+                Historical Significance: Learn about France’s military history and the soldiers commemorated here.<br>
+                Architecture & Sculpture: Admire intricate bas-reliefs and carvings celebrating French victories.<br>
+                Photography: Iconic photo opportunities from the top and surrounding plaza.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Arc de Triomphe</h2>
+            <p class="cj-text">
+                The Arc de Triomphe stands as a monumental symbol of French history and pride. Visitors can explore its grand structure, ascend to the viewing platform, and appreciate both its architectural beauty and historical significance.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  <div class="divider"></div>
+<div class="cinzel-title">The Grand Square of Paris</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/Z50XrpGF/anna_hunko_Dnraq_L3m_Xz_M_unsplash.jpg" alt="Place de la Concorde">
+        <div class="lux-overlay">
+          <h2>PLACE DE LA CONCORDE</h2>
+          <p>One of the largest and most historic squares in Paris.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/0yrhpDTC/anthony_delanoix_4r_Z8m_Ys_Dt_Bk_unsplash.jpg" alt="Luxor Obelisk">
+        <div class="lux-overlay">
+          <h2>LUXOR OBELISK</h2>
+          <p>An ancient Egyptian monument at the heart of the square.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/HkjFQXq0/lisa_kitano_X3q_ABYI70us_unsplash.jpg" alt="Paris Streets">
+        <div class="lux-overlay">
+          <h2>PARISIAN AVENUES</h2>
+          <p>Where history meets modern city life.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+   <div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+<div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            Place de la Concorde is the largest square in Paris, located at the eastern end of the Champs-Élysées. Famous for its historic obelisk, fountains, and neoclassical architecture, it has been a central stage for Parisian history, from royal ceremonies to the French Revolution.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">8th arrondissement, Paris, France</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Open 24 Hours</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Established</span>
+                <span class="info-value">1755</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Iconic Landmarks: View the Luxor Obelisk, historic fountains, and surrounding statues.<br>
+                Historical Significance: Learn about its role during the French Revolution and royal ceremonies.<br>
+                Photography: Capture stunning perspectives of the square and the Champs-Élysées.<br>
+                Cultural Events: Experience seasonal events, exhibitions, and public gatherings.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Place de la Concorde</h2>
+            <p class="cj-text">
+                Place de la Concorde is a historic and visually stunning square in the heart of Paris. Visitors can admire its iconic monuments, soak in centuries of history, and enjoy one of the city’s most emblematic open spaces.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  
+    <div class="divider"></div>
+<div class="cinzel-title">The Grandeur of Parisian Opera</div>  
+  
+<div class="luxury-container">  
+  <div class="luxury-viewport">  
+    
+    <!-- COUNTER -->  
+    <div class="lux-counter">  
+      <span class="current">01</span> /   
+      <span class="total">05</span>  
+    </div>  
+
+    <div class="luxury-wrapper" data-index="0">  
+        
+      <div class="lux-slide">  
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/k4NYMzqC/caleb_maxwell_Hmy_BAZWEf_Jo_unsplash.jpg" alt="Palais Garnier Exterior">  
+        <div class="lux-overlay">  
+          <h2>PALAIS GARNIER</h2>  
+          <p>An architectural masterpiece of Parisian elegance.</p>  
+        </div>  
+      </div>  
+        
+      <div class="lux-slide">  
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/7LqxtFPT/laila_OKu3GDyy_Rnc_unsplash.jpg" alt="Opera Interior">  
+        <div class="lux-overlay">  
+          <h2>OPERA INTERIORS</h2>  
+          <p>Lavish halls adorned with gold and artistic detail.</p>  
+        </div>  
+      </div>  
+
+      <div class="lux-slide">  
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/qvgW8yPy/laila_0BU2b_Vt_Bm_XM_unsplash.jpg" alt="Grand Staircase">  
+        <div class="lux-overlay">  
+          <h2>GRAND STAIRCASE</h2>  
+          <p>A symbol of luxury and theatrical magnificence.</p>  
+        </div>  
+      </div>  
+          
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+   <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The Palais Garnier is a world-famous opera house in Paris, inaugurated in 1875. Designed by Charles Garnier, it is renowned for its opulent architecture, grand staircase, ornate interiors, and the Chagall-painted ceiling in the main auditorium, making it a masterpiece of 19th-century design.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">9th arrondissement, Paris, France</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 10:00 – 17:00</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Opened</span>
+                <span class="info-value">1875</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Guided Tours: Explore the grand foyer, auditorium, and iconic staircase with expert guides.<br>
+                Architectural Beauty: Admire the ornate Baroque interiors and decorative details.<br>
+                Cultural Insight: Learn about the history of the Paris Opera and famous performances.<br>
+                Photography & Art: The painted ceiling and luxurious interiors make for unforgettable photos.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Palais Garnier</h2>
+            <p class="cj-text">
+                Palais Garnier is a masterpiece of French architecture and culture. Visitors can experience its opulent design, historic significance, and artistic treasures, making it one of the most visited cultural landmarks in Paris.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  
+ <div class="divider"></div>
+
+
+  
+    
+<section class="premium-credit">
+    <div class="credit-divider"></div>
+    <div class="credit-content">
+        <span class="curated-text">Curated & Crafted by</span>
+        <h3 class="brand-signature">Template by Exclusive Estates Studio</h3>
+        
+        <div class="social-row">
+            <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw==" class="social-link">Instagram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Portfolio</a>
+        </div>
+
+        <p class="credit-year">© 2026 Architectural Excellence</p>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-section brand-info">
+            <h2 class="logo"><span class="yellow">LUXURY</span><span class="red-text">Estates</span></h2>
+            <p class="description">
+                Redefining elegance and luxury. We provide the world's most exclusive famous gallery for the modern architect enthusiast.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw=="><i class="fab fa-instagram"></i></a>
+                <a href="#homepage"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#homepage">Gallery</a></li>
+                <li><a href="exclusive.html">Most Expensive</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Credits for images</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="https://postimages.org/">Post Images</a></li>
+                <li><a href="https://unsplash.com">Unsplash</a></li>
+                <li><a href="https://pixabay.com">Pixaby</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Get In Touch</h3>
+            <div class="accent-line"></div>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> premiumweb@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Chhattisgarh, INDIA</li>
+                <li><i class="fas fa-phone"></i> +91 77249 77137</li>
+            </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <div class="accent-line"></div>
+            <p>Subscribe to get updates on new arrivals.</p>
+            <div class="input-group">
+                <input type="email" placeholder="Your Email">
+                <button class="join-btn">Join</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Luxury Estates Website. Designed by Aryan Kumar Singh.</p>
+    </div>
+</footer>
+<script src="global-body.js"></script>
+<script src="main-specific.js"></script>
+<script src="lazy-loading.js"></script>
+       
+    </body>
+</html>
