@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>London – Luxury Destinations & Premium Estates</title>
+        <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        
+
+<link rel="stylesheet" href="main-global-body.css">
+
+        
+    </head>
+        <body data-page="london">
+<!-- Luxury Preloader -->
+<div id="lux-loader">
+    <div class="loader-inner">
+        <img src="https://i.postimg.cc/your-logo.png" alt="Aryan Singh Logo" class="loader-logo">
+        <div class="loader-ring"></div>
+    </div>
+</div>
+          
+
+        <nav class="master-pill-nav">
+    <div class="pill-inner">
+        <div id="master-menu" style="display:none;"> <!-- must match 'master-menu' -->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+        <div class="pill-logo">
+            LONDON
+        <span>CITY</span></div>
+
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <div class="toggle-icon">
+                <i id="theme-icon" class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="menu-btn" onclick="togglePremiumMenu()">
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+</div>
+
+<nav class="side-nav" id="sideNav">
+  <div class="nav-header">
+    <h2 class="nav-logo">LONDON_<span>ESTATES</span></h2>
+  </div>
+  <ul class="nav-links">
+  <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="paris.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Paris</a></li>
+  
+  <li><a href="new-york.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> New York</a></li>
+  <li><a href="shanghai.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Shanghai</a></li>
+  <li><a href="dubai.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Dubai</a></li>
+  <li><a href="#homepage" target="_blank" rel="noopener noreferrer"><i class="fas fa-images"></i> Gallery</a></li>
+  <li><a href="exclusive.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-gem"></i> Exclusive</a></li>
+  <li><a href="faq.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-question-circle"></i> FAQ</a></li>
+  <li><a href="contact.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Contact</a></li>
+</ul>
+  <div class="nav-footer">
+    <p>© 2026 Premium Collection</p>
+  </div>
+</nav>
+
+<div class="menu-blur" id="menuBlur" onclick="togglePremiumMenu()"></div>
+
+
+    <div class="banner-hero">
+    <div class="banner-overlay"></div>
+
+    <img src="https://i.postimg.cc/T2HHm4gq/caglar-canbay-S0IZVWtn-Yrw-unsplash.jpg" 
+         alt="Luxury Estate Background" class="banner-img">
+
+    <div class="banner-content">
+        <h1 class="banner-title">
+        LONDON
+         <br> <span>CITY</span>
+        </h1>
+        <p class="banner-subtitle">
+            where Modern culture <br>meets Heritage
+        </p>
+    </div>
+</div>
+<div id="homepage"></div>
+<div class="divider"></div>
+<div class="cinzel-title">Iconic Landmark of London</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/pLcHkp7x/charles_postiaux_Q6Uehpk_BSn_Q_unsplash.jpg">
+        <div class="lux-overlay">
+          <h2>TOWER BRIDGE</h2>
+          <p>London’s most iconic architectural masterpiece.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/TPyXsTMg/bush_o_graphy_UJi_Iuat1h_Z0_unsplash.jpg">
+        <div class="lux-overlay">
+          <h2>THAMES RIVER VIEW</h2>
+          <p>A breathtaking view beneath the historic bridge.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/K8p2QRV3/fabian_kuhne_Khy_Ne_Ij_QNXQ_unsplash.jpg" alt="Tower Bridge Night">
+        <div class="lux-overlay">
+          <h2>TOWER BRIDGE AT DAY</h2>
+          <p>Illuminated elegance across the London skyline.</p>
+        </div>
+      </div>
+
+     </div>
+
+    <!-- ARROWS -->
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this,-1)">❮</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this,1)">❯</button>
+
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+
+<div class="divider"></div>
+
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+        <div class="premium-inner">
+            <p class="summary-text">
+                
+
+Tower Bridge: The Largest Opening Bridge in the WorldTower Bridge is an iconic combined bascule and suspension bridge in London, completed in 1894 over the River Thames. Designed by Horace Jones and engineered by John Wolfe Barry, its Neo-Gothic towers and lifting roadway allow ships to pass, representing Victorian engineering. It features high-level walkways with glass floors and a museum inside.  
+            </p>
+
+            <div class="info-grid">
+    <div class="info-item">
+        <span class="info-label">Location</span>
+        <span class="info-value">Tower Hamlets, London</span>
+    </div>
+    <div class="info-item">
+        <span class="info-label">Open to Visitors</span>
+        <span class="info-value">April 1 – October 31</span>
+    </div>
+    <div class="info-item">
+        <span class="info-label">Heritage</span>
+        <span class="info-value">Completed 1894</span>
+    </div>
+</div>
+
+<div class="highlights-box">
+    <h4 class="highlight-title">Visitor Experience</h4>
+    <p>
+        Tower Bridge offers a unique journey through London’s history. Walk along the high-level glass floors, explore the Victorian engine rooms, and enjoy panoramic views of the Thames and the city skyline.
+    </p>
+</div>
+</div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Tower Bridge, London</h2>
+            <p class="cj-text">
+                Tower Bridge is one of London’s most iconic landmarks, spanning the River Thames. Combining neo-Gothic architecture with Victorian engineering, it opens to allow ships to pass while offering visitors spectacular views and a glimpse into London’s rich history.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+ <div class="divider"></div>
+<div class="cinzel-title">The  Crown Palace.</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/NFCYKFR4/jonathan_monck_mason_OJVIUdj_UBv_Y_unsplash.jpg" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>BUCKINGHAM PALACE</h2>
+          <p>World's most expensive Estate.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/KzYHRNQ1/ferdinand_stohr_f_C_CX8d_Fuz_E_unsplash.jpg" alt="Estate 2">
+        <div class="lux-overlay">
+          <h2>BUCKINGHAM PALACE</h2>
+          <p>The peak of luxury living.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/fbYw8whT/francais_a_londres_t_Phw7EPFq6I_unsplash.jpg" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>BRITISH ROYAL HERITAGE</h2>
+          <p>Exclusive architectural design.</p>
+        </div>
+      </div>
+            </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            Completed in 1703 and rebuilt into its current form in the 19th century, Buckingham Palace is the official London residence of the British monarch. Renowned for its iconic façade, the palace serves as a working royal residence and a major tourist attraction, offering visitors the chance to witness the Changing of the Guard and explore select State Rooms during summer openings.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Westminster, London</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Summer Tours</span>
+                <span class="info-value">July 1 – Sept 30</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Heritage</span>
+                <span class="info-value">Established 1703</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Changing of the Guard: A quintessential experience, with colorful uniforms and precise marching routines.<br>
+                State Rooms: During summer, visitors can tour the lavishly decorated rooms, filled with historic art and royal treasures.<br>
+                Photography & Views: The palace gardens and front courtyard offer excellent photo opportunities, especially in good lighting.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Buckingham Palace, London</h2>
+            <p class="cj-text">
+                Buckingham Palace stands as a symbol of British royalty and history. From the grandeur of its façade to the ceremonial displays in front, every corner reflects centuries of tradition. Visitors can enjoy the Changing of the Guard, explore the ornate State Rooms during the summer, and stroll around the picturesque palace gardens.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+<div class="cinzel-title">The Historic Majesty of the Tower of London</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img loading="lazy" src="https://i.postimg.cc/WbnjF9wD/gavin_allanwood_18_ui7G2MNc_unsplash.jpg" alt="Tower of London Exterior">
+        <div class="lux-overlay">
+          <h2>TOWER OF LONDON</h2>
+          <p>An enduring symbol of British history and power.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img loading="lazy" src="https://i.postimg.cc/QMBrzjGd/george_ciobra_ONM_g1Gz_Y2Y_unsplash.jpg" alt="Tower of London Walls">
+        <div class="lux-overlay">
+          <h2>ANCIENT FORTRESS WALLS</h2>
+          <p>Guarding centuries of royal heritage.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" src="https://i.postimg.cc/Hs2HcS9L/nick_fewings_n_Sotqa_Ul_4_unsplash.jpg" alt="Tower of London Night">
+        <div class="lux-overlay">
+          <h2>ILLUMINATED BY NIGHT</h2>
+          <p>A timeless monument under the London sky.</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+ 
+ <div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The Tower of London, officially known as Her Majesty's Royal Palace and Fortress of the Tower of London, is a historic castle on the north bank of the River Thames. Established in 1066, it has served as a royal palace, prison, armory, and treasury. Today, it welcomes visitors to explore the medieval walls, iconic White Tower, and the Crown Jewels.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Tower Hill, London</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Tue–Sun 09:00 – 17:30</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Heritage</span>
+                <span class="info-value">Established 1066</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Explore the White Tower: See historic armory and medieval architecture.<br>
+                Crown Jewels: Witness the spectacular collection of royal regalia.<br>
+                Yeoman Warder Tours: Guided tours by the famous Beefeaters bring history to life.<br>
+                Ravens & Legends: Learn about the legendary Tower ravens and royal folklore.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Tower of London</h2>
+            <p class="cj-text">
+                The Tower of London is one of the most iconic historic sites in the UK. From its medieval walls to the Crown Jewels, every corner tells a story of royalty, intrigue, and legend. Visitors can enjoy guided tours, view centuries-old treasures, and learn about the fascinating history of this fortress by the River Thames.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  <div class="divider"></div>
+<div class="cinzel-title">The Timeless Views of the London Eye</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+   <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    
+      
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/25qftCRZ/caglar_canbay_S0IZVWtn_Yrw_unsplash.jpg" alt="London Eye View">
+        <div class="lux-overlay">
+          <h2>LONDON EYE</h2>
+          <p>An iconic symbol overlooking the River Thames.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/25qftCRL/lucia_hatalova_7A15094rpp0_unsplash.jpg" alt="River Thames">
+        <div class="lux-overlay">
+          <h2>RIVER THAMES</h2>
+          <p>A historic river flowing through the heart of London.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/ZKXWSFxL/john_cameron_8Qqq7ml_O1Vo_unsplash.jpg" alt="London Skyline">
+        <div class="lux-overlay">
+          <h2>LONDON SKYLINE</h2>
+          <p>A breathtaking blend of heritage and modern architecture.</p>
+        </div>
+      </div>
+        
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+   <div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+  <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The London Eye is a giant observation wheel on the South Bank of the River Thames. Opened in 2000, it offers a unique perspective of London’s skyline, providing panoramic views of iconic landmarks such as Big Ben, Buckingham Palace, and St. Paul’s Cathedral. It is one of the city’s most popular tourist attractions.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">South Bank, London</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 11:00 – 18:00</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Opened</span>
+                <span class="info-value">2000</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Panoramic Views: Enjoy 360-degree views of London from the glass capsules.<br>
+                Evening Rides: The city lights create a breathtaking experience at night.<br>
+                Fast Track Tickets: Skip the lines for a smoother visit.<br>
+                Special Events: Seasonal events, like fireworks on New Year’s Eve, are spectacular from the Eye.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">London Eye</h2>
+            <p class="cj-text">
+                The London Eye is a modern icon of the city, providing unmatched views over the River Thames and London’s famous skyline. From its spacious capsules, visitors can spot landmarks spanning miles and experience one of the most famous observation experiences in the world.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+
+
+   
+    <div class="divider"></div>
+<div class="cinzel-title">The Timeless Legacy of the British Museum</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+    
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/3xxhggtq/tamara_menzi_ZAd3Z9w_Og_Os_unsplash.jpg" alt="British Museum Exterior">
+        <div class="lux-overlay">
+          <h2>BRITISH MUSEUM</h2>
+          <p>One of the world’s greatest cultural institutions.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/mgpsVtqg/tomasz_zielonka_0G1y_X6Cv944_unsplash.jpg" alt="Great Court">
+        <div class="lux-overlay">
+          <h2>THE GREAT COURT</h2>
+          <p>A masterpiece of modern architectural design.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/g22pvvgs/nicolas_lysandrou_k_DRYBXWFRTI_unsplash.jpg" alt="Museum Interior">
+        <div class="lux-overlay">
+          <h2>HISTORIC COLLECTIONS</h2>
+          <p>Preserving human history across centuries.</p>
+        </div>
+      </div>
+        
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+   <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The British Museum, founded in 1753, is one of the world’s greatest museums of human history and culture. Located in Bloomsbury, London, it houses millions of works from every continent, including the Rosetta Stone, Egyptian mummies, and ancient Greek sculptures.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Bloomsbury, London</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 10:00 – 17:30</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Founded</span>
+                <span class="info-value">1753</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Free Entry: Most galleries are free to enter, making it accessible to everyone.<br>
+                Guided Tours: Join expert tours to explore highlights like the Rosetta Stone and Parthenon sculptures.<br>
+                Special Exhibitions: Rotating exhibitions offer rare artifacts and immersive experiences.<br>
+                Family Friendly: Activities and trails make it perfect for visitors of all ages.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">British Museum</h2>
+            <p class="cj-text">
+                The British Museum is a treasure trove of human history and culture, featuring iconic artifacts from around the world. Visitors can explore ancient civilizations, marvel at priceless art, and experience centuries of human achievement under one roof.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  
+ <div class="divider"></div>
+
+
+  
+   
+<section class="premium-credit">
+    <div class="credit-divider"></div>
+    <div class="credit-content">
+        <span class="curated-text">Curated & Crafted by</span>
+        <h3 class="brand-signature">Template by Exclusive Estates Studio</h3>
+        
+        <div class="social-row">
+            <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw==" class="social-link">Instagram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Portfolio</a>
+        </div>
+
+        <p class="credit-year">© 2026 Architectural Excellence</p>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-section brand-info">
+            <h2 class="logo"><span class="yellow">LUXURY</span><span class="red-text">Estates</span></h2>
+            <p class="description">
+                Redefining elegance and luxury. We provide the world's most exclusive famous gallery for the modern architect enthusiast.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw=="><i class="fab fa-instagram"></i></a>
+                <a href="#homepage"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#homepage">Gallery</a></li>
+                <li><a href="exclusive.html">Most Expensive</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Credits for images</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="https://postimages.org/">Post Images</a></li>
+                <li><a href="https://unsplash.com">Unsplash</a></li>
+                <li><a href="https://pixabay.com">Pixaby</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Get In Touch</h3>
+            <div class="accent-line"></div>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> premiumweb@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Chhattisgarh, INDIA</li>
+                <li><i class="fas fa-phone"></i> +91 77249 77137</li>
+            </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <div class="accent-line"></div>
+            <p>Subscribe to get updates on new arrivals.</p>
+            <div class="input-group">
+                <input type="email" placeholder="Your Email">
+                <button class="join-btn">Join</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Luxury Estates Website. Designed by Aryan Kumar Singh.</p>
+    </div>
+</footer>
+
+<script src="global-body.js"></script>
+<script src="main-specific.js"></script>
+<script src="lazy-loading.js"></script>
+       
+    </body>
+</html>
