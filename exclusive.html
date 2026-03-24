@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Featured Estates – Exclusive Luxury Properties</title>
+        <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        
+
+<link rel="stylesheet" href="style.css">
+
+        
+    </head>
+     <body data-page="exclusive">
+   <!-- Luxury Preloader -->
+<!-- Luxury Preloader -->
+<div id="lux-loader">
+    <div class="loader-inner">
+        <!-- Luxury SVG Logo -->
+        <svg width="120" height="50" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#D4AF37"/>
+                    <stop offset="100%" stop-color="#FFD700"/>
+                </linearGradient>
+                <style>
+                  .initials { font-family: 'Cinzel', serif; font-size: 36px; font-weight: bold; fill: url(#goldGradient); }
+                  .text { font-family: 'Lora', serif; font-size: 14px; fill: #FFFFFF; letter-spacing: 1px; }
+                  .icon { fill: url(#goldGradient); }
+                </style>
+            </defs>
+            <!-- Triangle icon -->
+            <polygon class="icon" points="20,60 40,20 60,60" />
+            <!-- AS initials -->
+         <text x="75" y="50" class="initials">EP</text>
+<text x="75" y="70" class="text">Exclusive Places</text>
+        </svg>
+
+        <!-- Spinning gold ring -->
+        <div class="loader-ring"></div>
+    </div>
+</div>
+  
+
+       <nav class="master-pill-nav">
+    <div class="pill-inner">
+        <div id="master-menu" style="display:none;"> <!-- must match 'master-menu' -->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+        <div class="pill-logo">
+            EXCLUSIVE
+        <span>PLACES</span></div>
+
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <div class="toggle-icon">
+                <i id="theme-icon" class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="menu-btn" onclick="togglePremiumMenu()">
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+</div>
+
+<nav class="side-nav" id="sideNav">
+  <div class="nav-header">
+    <h2 class="nav-logo">EXCLUSIVE<span>ESTATES</span></h2>
+  </div>
+  <ul class="nav-links">
+  <li><a href="homepage.html"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="paris.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Paris</a></li>
+  <li><a href="london.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> London</a></li>
+  <li><a href="new-york.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> New York</a></li>
+  <li><a href="shanghai.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Shanghai</a></li>
+  <li><a href="dubai.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Dubai</a></li>
+  <li><a href="#homepage" target="_blank" rel="noopener noreferrer"><i class="fas fa-images"></i> Gallery</a></li>
+
+  <li><a href="faq.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-question-circle"></i> FAQ</a></li>
+  <li><a href="contact.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Contact</a></li>
+</ul>
+  <div class="nav-footer">
+    <p>© 2026 Premium Collection</p>
+  </div>
+</nav>
+
+<div class="menu-blur" id="menuBlur" onclick="togglePremiumMenu()"></div>
+
+
+    <div class="banner-hero">
+    <div class="banner-overlay"></div>
+
+    <img src="https://i.postimg.cc/BvqNcf8N/anna-hunko-N-B-f-Vl-Sn4Q-unsplash.jpg" 
+         alt="Luxury Estate Background" class="banner-img">
+
+    <div class="banner-content">
+        <h1 class="banner-title">
+        EXCLUSIVE 
+         <br> <span>ESTATES</span>
+        </h1>
+        <p class="banner-subtitle">
+            
+Discover the world’s most prestigious properties,<br> curated for elite living.
+        </p>
+    </div>
+</div>
+
+<div id="homepage"></div>
+<div class="divider"></div>
+<div class="cinzel-title">The Most Expensive Estate Ever.</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/NFCYKFR4/jonathan_monck_mason_OJVIUdj_UBv_Y_unsplash.jpg">
+        <div class="lux-overlay">
+          <h2>BUCKINGHAM PALACE</h2>
+          <p>World's most expensive Estate.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/KzYHRNQ1/ferdinand_stohr_f_C_CX8d_Fuz_E_unsplash.jpg">
+        <div class="lux-overlay">
+          <h2>BUCKINGHAM PALACE</h2>
+          <p>The peak of luxury living.</p>
+        </div>
+      </div>
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/fbYw8whT/francais_a_londres_t_Phw7EPFq6I_unsplash.jpg" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>BUCKINGHAM PALACE</h2>
+          <p>British Monarch Estate.</p>
+        </div>
+      </div>  
+
+        </div>
+
+    <!-- ARROWS -->
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this,-1)">❮</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this,1)">❯</button>
+
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="estate-info">
+  <h2 class="estate-title">Buckingham Palace</h2>
+
+  <p class="estate-description">
+    Located in Westminster, London, this historic royal residence contains 
+    775 rooms including State Rooms, royal suites, offices and ceremonial halls. 
+    Since 1837 it has served as the official residence of the British monarch.
+  </p>
+
+  <div class="estate-details">
+    <div class="detail">📍 Westminster, London</div>
+    <div class="detail">🏛 Built in 1703</div>
+    <div class="detail">👑 775 Rooms</div>
+    <div class="detail">🎖 Royal Ceremonies</div></div>
+  
+
+  <div class="playfair-display-title">
+"An architectural icon representing centuries of royal heritage."
+</div>
+
+</div>
+</div>
+<div class="key-toggle">
+  <span>Brief Description</span>
+  <span class="arrow-2">▼</span>
+</div>
+
+<div class="brief-content-2">
+<div class="lora-title-2"><ul>
+    <li>
+        Buckingham Palace in London is the monarch's official residence and administrative headquarters, featuring 775 rooms including 19 State Rooms, 52 royal/guest bedrooms, and 92 offices.</li><li> Built in 1703 and used by royals since 1837, it is a key site for state ceremonies, hosting royal events, and the famous daily 11:00 am Changing of the Guard. 
+Royal Collection Trust</li>
+Royal Collection Trust
+ +3
+<div class="montserrat-title">Key Information & Visitor Tips:</div>
+<li>Location: Situated in Westminster, London, near The Mall and Hyde Park.</li>
+<li>Tours: The State Rooms are open to the public during the summer (July 9 – September 27, 2026), with guided tours available at other times.</li>
+<li>Highlights: The Queen’s Gallery, Royal Mews, and the Ballroom.
+Visitor Rules: No food/drink inside, airport-style security checks, and no pushchairs in the State Rooms (baby carriers are provided).</li>
+<li>History: Originally a private house, it was converted into a palace in the 1820s by John Nash for George IV. </li>
+    </li>
+</ul>
+  </div>
+</div>
+    
+<div class="divider"></div>
+<div class="cinzel-title">The Tallest Estate Ever.</div>
+<div class="luxury-container">
+  <div class="luxury-viewport">
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/gJq22GM1/david_rodrigo_Fr6zexbmjmc_unsplash.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>BURJ KHALIFA</h2>
+          <p>World's tallest Estate.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/DwDMx1x4/riyas_mohammed_CK9BTs_Q_I1Y_unsplash.jpg" loading="lazy" alt="Estate 2">
+        <div class="lux-overlay">
+          <h2>BURJ LHALIFA</h2>
+          <p>The peak of luxury living.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/cCmzhjzW/nelemson_guevarra_d_Bft_X6t_NEds_unsplash.jpg"  
+        loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>MODERN ARCHITECTURE</h2>
+          <p>Perfect Modern architectural design.</p>
+        </div>
+      </div>
+     
+
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+<div class="estate-info">
+  <h2 class="estate-title">Burj Khalifa</h2>
+
+  <p class="estate-description">
+    The Burj Khalifa is the world’s tallest building, standing at 828 metres in the heart of Dubai, UAE. Completed in 2010, the 163-floor silver spire serves as a global icon of modern engineering and a symbol of the city's rapid transformation.
+  </p>
+
+  <div class="estate-details">
+    <div class="detail"> Downtown city,Dubai</div>
+    <div class="detail"> Built in 2010</div>
+    <div class="detail"> 900+ Apartments</div>
+    <div class="detail"> Modern Marvel Engineering</div></div>
+  
+
+  <p class="playfair-display-title">
+"The Burj Khalifa signifies Dubai’s shift from an oil-based economy to a global hub for tourism and finance, acting as a massive "vertical city" that proves the region's engineering capabilities."
+</p> 
+</div>
+<div class="key-toggle">
+  <span>Brief Description</span>
+  <span class="arrow-2">▼</span>
+</div>
+
+<div class="brief-content-2">
+ 
+ <div class="lora-title-2">
+ <ul><li> The Burj Khalifa in Dubai is the world's tallest building and structure, standing at 828 meters (2,717 feet) and over 160 stories.</li><li> Opened in 2010, it is a mixed-use tower featuring residential, corporate, and hotel space, featuring observation decks (At the Top) on levels 124, 125, and 148. It is a premier global landmark.</li> 
+<div class="montserrat-title">
+Key Facts & Highlights:</div>
+<li>Design: Inspired by the desert flower Hymenocallis, the design features a Y-shaped plan for maximum views and structural stability, designed by Skidmore, Owings & Merrill (SOM).</li>
+<li>Records: It holds records for the tallest building, tallest free-standing structure, and highest observation deck.</li>
+<li>Location: Situated in Downtown Dubai, adjacent to the Dubai Mall and the Dubai Fountain.</li>
+<li>Components: Includes the Armani Hotel, luxury residences, office suites, and the dining spot At.mosphere on the 122nd floor.</li>
+<li>Construction: Construction began in 2004 and was completed in 2010, designed to withstand high winds and temperatures. </li></ul>
+</div>
+ </div>   
+ 
+ <div class="divider"></div>
+<div class="cinzel-title">One of Most Historic Estate Ever.</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/3wjJ7r4F/tharun_thejus_RRf_QNEGNYa8_unsplash.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>PALACE OF VERSAILLES</h2>
+          <p>World's most historic Estate.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/jq4NvKMT/mathias_reding_AUDG_Ja0MOU_unsplash.jpg" loading="lazy" alt="Estate 2">
+        <div class="lux-overlay">
+          <h2>FRENCH MONARCH</h2>
+          <p>The royal luxury living.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/YS2HzQ8X/alexandre_brondino_j_Cx_M7spc_AWY_unsplash.jpg" loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>FRENCH ROYAL HERITAGE</h2>
+          <p>Exclusive interior design.</p>
+        </div>
+      </div>
+        
+    
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="estate-info">
+  <h2 class="estate-title">Palace of Versailles</h2>
+
+  <p class="estate-description">
+    The Palace of Versailles is a world-renowned symbol of absolute monarchy and French Baroque art, located just outside Paris. Originally a hunting lodge, it was transformed by King Louis XIV into a massive estate that served as the center of French political power until the Revolution of 1789.
+  </p>
+
+  <div class="estate-details">
+    <div class="detail">📍 Versailles, France</div>
+    <div class="detail">🏛 Built in 1623</div>
+    <div class="detail">👑 2300 Rooms</div>
+    <div class="detail">🎖 French Monarch</div></div>
+  
+
+  <div class="playfair-display-title">
+"Symbol of Absolute Monarchy."
+</div> 
+</div>
+<div class="key-toggle">
+  <span>Brief Description</span>
+  <span class="arrow-2">▼</span>
+</div>
+
+<div class="brief-content-2">
+<div class="lora-title-2"><ul>
+    <li> The Palace of Versailles is a former French royal residence and masterpiece of 17th-century art, converted from a hunting lodge by Louis XIV into a massive Baroque complex in 1682.</li><li> Located near Paris, it is renowned for the Hall of Mirrors, opulent royal apartments, and vast, designed gardens.</li><li>Listed as a UNESCO World Heritage site since 1979, it served as the center of power until the French Revolution. </li>
+
+<div class="montserrat-title">Key Historical Details</div>
+<li>Transformation: Louis XIII built a small hunting lodge in 1623, which his son, Louis XIV, transformed into the epicenter of French power to keep nobles close and control them.
+</li>
+<li>The "Sun King": Louis XIV moved his court and government there in 1682, establishing an absolutist monarchy.</li>
+<li>Revolution and Later: The palace ceased to be a royal residence after 1789, following the start of the French Revolution.</li>
+<li>Museum: In 1837, King Louis-Philippe converted the palace into a museum dedicated to "all the Glories of France," and it remains a popular cultural site today.</li> 
+
+<div class="montserrat-title">Main Attractions and Architecture</div>
+<li>Hall of Mirrors: A renowned 73-meter-long hall lined with 357 mirrors, designed by Jules Hardouin-Mansart to show French prosperity and host lavish functions.</li>
+<li>Royal Apartments: Opulent rooms for the King and Queen.</li>
+<li>Gardens of Versailles: Designed by André Le Nôtre, they are one of the world's largest, featuring hundreds of fountains, statues, and, in its prime, 1,400 fountains.</li>
+<li>Trianon Estates: Included within the grounds are the Grand Trianon and the Petit Trianon, the latter often associated with Marie Antoinette. 
+    
+    
+    </li>
+    </div>
+    </div>
+    
+    
+    <div class="divider"></div>
+<div class="cinzel-title">The Largest Estate Ever.</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/C5rYR5bG/ravi_palke_t_H_Cv_GDg7yw_unsplash.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>LAXMI VILAS PALACE</h2>
+          <p>World's largest Estate.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/65RtWWyF/karan_suthar_TEu3e_BVE5c_unsplash.jpg" loading="lazy" alt="Estate 2">
+        <div class="lux-overlay">
+          <h2>INDIAN PALACE</h2>
+          <p>The feeling of royality.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/MHCP38w8/yudhajit_ghosh_pw_X9VPGb_Li_M_unsplash.jpg" loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>INDIAN CULTURAL PALACE</h2>
+          <p>Exclusive architectural design.</p>
+        </div>
+      </div>
+        
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="estate-info">
+  <h2 class="estate-title">Laxmi Vilas Palace</h2>
+
+  <p class="estate-description">
+    The Laxmi Vilas Palace in Vadodara is the world's largest private residence, built in 1890 by Maharaja Sayajirao Gaekwad III. This Indo-Saracenic masterpiece is nearly four times the size of Buckingham Palace and remains the official home of the royal family of Baroda.
+  </p>
+
+  <div class="estate-details">
+    <div class="detail">📍 Vadodara , Gujarat, India</div>
+    <div class="detail">🏛 Built in 1890</div>
+    <div class="detail">👑 170 Rooms</div>
+    <div class="detail">🎖 Largest Estate </div></div>
+  
+
+  <div class="playfair-display-title">
+"Pretends Modernization and Wealth."
+</div> 
+</div>
+<div class="key-toggle">
+  <span>Brief Description</span>
+  <span class="arrow-2">▼</span>
+</div>
+
+<div class="brief-content-2">
+<div class="lora-title-2"><ul>
+    <li>  Laxmi Vilas Palace in Vadodara, Gujarat, built in 1890 by Maharaja Sayajirao Gaekwad III, is the world's largest private residence, spanning over 700 acres and 30.5 million sq ft.</li><li>It is four times larger than Buckingham Palace and features Indo-Saracenic architecture, housing a museum, golf course, and the royal Gaekwad family.</li> 
+
+<div class="montserrat-title">Key Features and Highlights:</div>
+<li>Architecture: Designed by Major Charles Mant, the palace blends Hindu, Mughal, Rajasthani, and Western styles, featuring Venetian mosaic floors, Italian water fountains, and Belgian stained glass.</li>
+<li>Darbar Hall: A magnificent hall decorated with mosaics, used for cultural events and concerts.</li>
+<li>Maharaja Fateh Singh Museum: Located within the complex, it houses a large collection of European paintings by artists like Raja Ravi Varma, along with royal artifacts.</li>
+<li>Amenities: Historically equipped with modern amenities like elevators, it was highly advanced for its time.</li>
+<li>Modern Day: Still serves as the residence of the Gaekwad dynasty. Parts of the palace are open to the public via audio tours, typically closed on Mondays. 
+    
+    
+    </li>
+    </div>
+    </div>
+    
+ <div class="divider"></div>
+<div class="cinzel-title">The Only 7-Star Hotel.</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> /
+      <span class="total">03</span>
+    </div>
+
+    <!-- WRAPPER (ALL SLIDES MUST BE INSIDE THIS) -->
+    <div class="luxury-wrapper" data-index="0">
+
+      <!-- SLIDE 1 -->
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/SR1qnRct/andreas_m_BLGcfe_Nnx4U_unsplash.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>BURJ AL ARAB</h2>
+          <p>World's only 7 star rated hotel.</p>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/DzCKjmMf/roman_logov_jomuw0_3F8A_unsplash.jpg" loading="lazy" alt="Estate 2">
+        <div class="lux-overlay">
+          <h2>LUXURY INTERIOR</h2>
+          <p>The sign of luxurious.</p>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/q7BTx2QF/darcey_beau_KTiv_Tunp_lw_unsplash.jpg" loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>BURJ AL ARAB</h2>
+          <p>World's One of the Best hotel.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- NAV BUTTONS -->
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+
+  </div>
+</div>
+  
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="estate-info">
+  <h2 class="estate-title">Burj-Al-Arab</h2>
+
+  <p class="estate-description">
+    The Burj Al Arab is a world-famous luxury hotel in Dubai, designed to resemble a billowing Arabian dhow sail. Completed in 1999 on a private island, it is a global icon of opulence and modern engineering, often called the world's only "seven-star" hotel. 
+  </p>
+
+  <div class="estate-details">
+    <div class="detail"> Dubai, UAE</div>
+    <div class="detail"> Built in 1999</div>
+    <div class="detail">202 Rooms</div>
+    <div class="detail"> 7 Star Hotel</div></div>
+  
+
+  <div class="playfair-display-title">
+"The only 7-Star Rated Hotel."
+</div> 
+</div>
+<div class="key-toggle">
+  <span>Brief Description</span>
+  <span class="arrow-2">▼</span>
+</div>
+
+<div class="brief-content-2">
+<div class="lora-title-2"><ul>
+    <li>  The Burj Al Arab is a world-renowned, ultra-luxury 7-star hotel in Dubai, UAE, known for its iconic sail-shaped architecture, located on a private artificial island.</li> <li>Opened in 1999, it stands 321 meters high, offering 202 luxurious duplex suites with 24-karat gold interiors, private butler service, and high-end dining like Al Mahara.</li> <div class="montserrat-title">Key features of the Burj Al Arab include:</div>
+<li>Design & Structure: Designed by Tom Wright to resemble a billowing dhow sail, it is connected to the mainland by a private, curving bridge.</li>
+<li>Location: Situated 280 meters off Jumeirah Beach on a man-made island designed to look like it is floating.</li>
+<li>Opulent Suites: Features 202 suites ranging from 170 to 780 square meters, featuring extensive use of marble, precious fabrics, and gold.</li>
+<li>Dining & Amenities: Houses nine signature restaurants and bars, including the Michelin-starred Al Muntaha (27th floor) and underwater-themed Al Mahara.</li>
+<li>Unique Features: Features a famous helipad that has been transformed into a tennis court and golf course, and a massive outdoor luxury terrace with swimming pools and cabanas.</li>
+<li>Experiences: Offers guided "Inside Burj Al Arab" tours, allowing visitors to view the lavish interiors and Royal Suite. 
+    
+    
+    </li>
+    </div>
+    </div>
+       
+       <div class="divider"></div>
+<div class="cinzel-title">The Most Historic Construction Ever.</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+       <div class="lux-slide">
+        <img src="https://i.postimg.cc/ydkCwBMJ/gerdrohsdesign_cologne_cathedral_1846338_1920.jpg" loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>COLOGNE CATHEDRAL</h2>
+          <p>Exclusive architectural design.</p>
+        </div>
+      </div>
+        <div class="lux-slide">
+        <img src="https://i.postimg.cc/9Fx95b36/doosenwhacker_cologne_cathedral_5512117.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>SOGNIFICANCE</h2>
+          <p>Pretends the sign of silence</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="estate-info">
+  <h2 class="estate-title">Cologne Cathedral</h2>
+
+  <p class="estate-description">
+    The Cologne Cathedral (Kölner Dom) is a Gothic masterpiece in Germany that took over 600 years to complete. Standing as a UNESCO World Heritage site, it is a powerful symbol of Christianity and resilience, famously surviving 14 aerial bombs during World War II.
+  </p>
+
+  <div class="estate-details">
+    <div class="detail">Cologne, Germany</div>
+    <div class="detail"> Construction ended in 1880</div>
+    <div class="detail"> Can hold 20,000 people</div>
+    <div class="detail"> Massive German Unity</div></div>
+  
+
+  <div class="playfair-display-title">
+"Massive Symbol Of Christianity Faith."
+</div> 
+</div>
+<div class="key-toggle">
+  <span>Brief Description</span>
+  <span class="arrow-2">▼</span>
+</div>
+
+<div class="brief-content-2">
+<div class="montserrat-title">About Cologne Cathedral</div>
+<div class="lora-title-2"><ul>
+    <li>  
+    
+    Cologne Cathedral (Kölner Dom) is a renowned UNESCO World Heritage site and Germany's most-visited landmark, a masterpiece of Gothic architecture built over 600 years (1248–1880).</li><li> Located in Cologne, it is famed for its twin spires (157m), massive stained glass, and as the shrine housing the Three Wise Men's relics. </li>
+
+<div class="montserrat-title">Key Details About Cologne Cathedral:</div>
+<li>Architecture: It is a High Gothic basilica with a 157-meter-tall facade, once the world's tallest building, boasting 10,000 square meters of windows.</li>
+<li>History & Significance: Started in 1248 to house the Shrine of the Three Kings, construction paused for centuries before completion in 1880. It was designated a UNESCO site in 1996.</li>
+<li>Location & Access: Situated directly next to the Cologne Central Station, making it highly accessible to visitors.</li>
+<li>Visiting: The cathedral sees over 20,000 daily visitors and is free to enter, though a 533-step climb to the top of the tower is available.</li>
+<li>Resilience: Despite being bombed 14 times during World War II, the structure remained standing. 
+    </li>
+    </div>
+    </div>
+    
+   
+<section class="premium-credit">
+    <div class="credit-divider"></div>
+    <div class="credit-content">
+        <span class="curated-text">Curated & Crafted by</span>
+        <h3 class="brand-signature">Template by Exclusive Estates Studio</h3>
+        
+        <div class="social-row">
+            <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw==" class="social-link">Instagram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Portfolio</a>
+        </div>
+
+        <p class="credit-year">© 2026 Architectural Excellence</p>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-section brand-info">
+            <h2 class="logo"><span class="yellow">LUXURY</span><span class="red-text">Estates</span></h2>
+            <p class="description">
+                Redefining elegance and luxury. We provide the world's most exclusive famous gallery for the modern architect enthusiast.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw=="><i class="fab fa-instagram"></i></a>
+                <a href="#homepage"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#homepage">Gallery</a></li>
+                <li><a href="exclusive.html">Most Expensive</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Credits for images</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="https://postimages.org/">Post Images</a></li>
+                <li><a href="https://unsplash.com">Unsplash</a></li>
+                <li><a href="https://pixabay.com">Pixaby</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Get In Touch</h3>
+            <div class="accent-line"></div>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> premiumweb@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Chhattisgarh, INDIA</li>
+                <li><i class="fas fa-phone"></i> +91 77249 77137</li>
+            </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <div class="accent-line"></div>
+            <p>Subscribe to get updates on new arrivals.</p>
+            <div class="input-group">
+                <input type="email" placeholder="Your Email">
+                <button class="join-btn">Join</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Luxury Estates Website. Designed by Aryan Kumar Singh.</p>
+    </div>
+</footer>
+
+<script src="global-body.js"></script>
+<script src="main-specific.js"></script>
+       
+    </body>
+</html>
