@@ -1,0 +1,1745 @@
+* Preloader full-screen */
+#lux-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0a; /* dark luxury background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Inner container */
+.loader-inner {
+    text-align: center;
+}
+
+/* Logo */
+.loader-logo {
+    width: 120px; /* customize size */
+    margin-bottom: 20px;
+    animation: logoPulse 1.5s infinite alternate;
+}
+
+/* Logo pulse animation */
+@keyframes logoPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.1); opacity: 1; }
+}
+
+/* Animated ring around logo */
+.loader-ring {
+    width: 60px;
+    height: 60px;
+    border: 4px solid #d4af37; /* gold luxury color */
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+/* Spin animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.lazy-img {
+  filter: blur(10px);
+  transition: 0.5s ease;
+}
+
+.lazy-img.loaded {
+  filter: blur(0);
+}
+
+.montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration:bold;
+  font-size:24px;
+}
+
+
+.lora-title {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size:16px;
+  z-index:9999;
+  position:relative;
+  }
+
+.cinzel-title {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align:center;
+  position:relative;
+  justify-content:center;
+  left:0%;
+  font-size:40px;
+  z-index:999;
+  overflow-x:hidden;
+}
+
+html{
+scroll-behavior:smooth;
+}
+.bar a:hover{
+color:gold;
+text-shadow:0 0 10px gold,0 0 20px gold;
+}
+
+.nav-bar{
+    height:20px;
+    width:20px;
+    color:black;
+    padding:15px;
+    color:white;
+}
+/* CRITICAL: This stops the right-side scrolling problem */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family:Arial;
+}
+
+
+.master-pill-nav {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensures it is always on top */
+    pointer-events: none; /* Allows clicking through the empty container area */
+}
+
+.pill-inner {
+    pointer-events: auto; /* Re-enables clicking for the navbar itself */
+    width: 70%;
+    max-width: 800px;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.pill-logo {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+}
+
+.pill-logo span { color: #ffd700; }
+
+.pill-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.pill-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.pill-links a:hover { color: #ffd700; }
+
+/* Hamburger Button */
+.pill-burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pill-burger span {
+    width: 18px;
+    height: 2px;
+    background: #ffd700;
+    transition: 0.3s;
+}
+
+/* Responsive Logic */
+@media (max-width: 768px) {
+    .pill-links { display: none; } /* Hide links on phone to prevent crowding */
+    .pill-inner { width: 95%; padding: 10px 20px; }
+}
+
+.theme-toggle {
+    cursor: pointer;
+
+    width: clamp(36px, 5vw, 50px);
+    height: clamp(36px, 5vw, 50px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+
+    transition: all 0.3s ease;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 480px) {
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .theme-toggle {
+        width: 48px;
+        height: 48px;
+    }
+}
+.theme-toggle {
+    touch-action: manipulation;
+}
+
+.theme-toggle:hover {
+    background: rgba(212, 175, 55, 0.1);
+    transform: rotate(15deg); /* Fixed: Changed px to deg */
+}
+
+#theme-icon {
+    color: #D4AF37; /* Metallic Gold */
+    font-size: 1.1rem;
+}
+
+/* --- PREMIUM LIGHT MODE (WHITE & BLACK) --- */
+
+body.light-mode {
+    background-color: #FCFCFC !important; /* Premium Crisp White */
+    color: #050505 !important; /* Piano Black */
+}
+
+body.light-mode .pill-inner {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .pill-logo {
+    color: #050505;
+    font-weight: 800;
+}
+
+/* Luxury Card - Minimalist White */
+body.light-mode .luxury-card {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+body.light-mode .card-details h3 {
+    color: #050505; 
+}
+
+/* Featured Box - Stark & Modern */
+body.light-mode .featured-box {
+    background: #F8F9FA; /* Extremely light grey/white */
+    backdrop-filter: blur(20px);
+    border: 1px solid #EDEDED;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .featured-title {
+    color: #888; /* Subtle grey for labels */
+    letter-spacing: 1px;
+}
+
+body.light-mode .featured-text h3 {
+    color: #050505;
+}
+
+body.light-mode .featured-text p {
+    color: #333; /* Slightly softer black for long text */
+    line-height: 1.6;
+}
+
+/* Image Shadow - Sharp and Clean */
+body.light-mode .featured-image img {
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
+}
+
+/* 1. DEFINE VARIABLES AT THE TOP */
+:root {
+    --bg-color: #050505;     /* Deep Black */
+    --text-color: #FFFFFF;   /* White */
+    --card-bg: #1a1a1a;      /* Dark Grey */
+    --accent-gold: #D4AF37;  /* Metallic Gold */
+}
+
+body.light-mode {
+    --bg-color: #FCFCFC;     /* Premium White */
+    --text-color: #050505;   /* Piano Black */
+    --card-bg: #FFFFFF;      /* Pure White */
+    --accent-gold: #B8860B;  /* Deeper Gold for contrast */
+}
+
+/* 2. APPLY TO GLOBAL BODY */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    font-family: sans-serif; /* Or your preferred font */
+}
+
+/* 3. YOUR COMPONENT STYLES (Toggle, Cards, etc.) */
+.theme-toggle {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--accent-gold);
+    /* ... rest of your toggle code ... */
+}
+
+.luxury-card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid rgba(0,0,0,0.1);
+    /* ... rest of your card code ... */
+}
+
+
+.side-nav.active {
+  right: 0;
+  visibility: visible; /* Show it only when active */
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: #ffd700; /* Gold */
+  transition: all 0.4s cubic-bezier(0.6, 0.05, 0.1, 0.9);
+}
+/* Burger Button */
+.menu-btn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 2000;
+  cursor: pointer;
+  background: rgba(255, 215, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  transition: 0.3s;
+  outline: none;
+-webkit-tap-highlight-color: transparent
+}
+
+.btn-line {
+  width: 30px;
+  height: 2px;
+  background-color: #ffd700;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Sidebar Styling */
+.side-nav {
+  position: fixed;
+  top: 0;
+  right: -350px; /* Hidden off-screen */
+  width: 50%;
+  height: 100vh;
+  background: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(20px); /* Premium Glass Effect */
+  border-left: 1px solid rgba(255, 215, 0, 0.4);
+  z-index: 1999;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+ 
+}
+
+.side-nav.active {
+  right: 0;
+}
+
+
+/* Logo */
+.nav-logo {
+  color: #ffd700;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
+
+  font-size: 1.3rem; /* fixed */
+  white-space: normal; /* ✅ allow wrapping */
+  word-break: break-word; /* ✅ break long words if needed */
+}/* Links */
+.nav-links a {  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem; /* fixed */
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  transition: 0.3s;
+
+  white-space: normal; /* ✅ allow wrapping */
+  overflow-wrap: break-word; /* ✅ safe wrapping */
+}
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 2vw, 1.5rem); /* responsive text size */
+    
+    display: flex;
+    align-items: center;
+    gap: clamp(6px, 1.5vw, 12px); /* responsive spacing between icon & text */
+    
+    transition: 0.3s;
+    white-space: normal; /* allow wrapping if needed */
+    overflow-wrap: break-word;
+}
+
+/* Nav Icons */
+.nav-links a i {
+    color: #ffd700;
+    font-size: clamp(0.7rem, 1.2vw, 1.4rem); /* icon scales with text */
+}
+
+/* Nav list spacing */
+.nav-links li {
+    margin: clamp(0.5rem, 2vw, 1.5rem) 0; /* responsive vertical spacing */
+}
+
+.nav-links a i {
+  color: #ffd700;
+  font-size: clamp(0.7rem,1vw,1.4rem);
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+  transform: translateX(8px);
+}
+
+/* ---------- RESPONSIVE (NO TEXT CHANGE) ---------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .nav-logo {
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+  }
+
+  .nav-links li {
+    margin: 18px 0;
+  }
+
+  .nav-links a {
+    gap: 10px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .nav-logo {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-links li {
+    margin: 13px 0;
+  }
+
+  .nav-links a {
+    gap: 8px;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 360px) {
+  .nav-links a {
+    gap: 6px;
+  }
+
+  .nav-links li {
+    margin: 12px 0;
+  }
+}
+.nav-links a:hover {
+  color: #ffd700;
+  transform: translateX(10px);
+}
+
+/* Background Blur Overlay */
+.menu-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1998;
+  display: none;
+  transition: 0.3s;
+}
+
+.menu-blur.active {
+  display: block;
+}
+
+/* Button Animation to 'X' */
+.menu-btn.open .btn-line:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.menu-btn.open .btn-line:nth-child(2) { opacity: 0; }
+.menu-btn.open .btn-line:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+/* Container and Layout */
+.main-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 5% 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+/* Typography & Colors */
+.yellow { color: #FFD700; }
+.red-text { color: #FF4D4D; }
+
+.footer-section h3 {
+    color: #FFD700;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.accent-line {
+    width: 35px;
+    height: 2px;
+    background-color: #FF4D4D;
+    margin-bottom: 20px;
+}
+
+.description, .links-list, .contact-list, .newsletter p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* Lists and Icons */
+.links-list, .contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.links-list a {
+    color: #999;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links-list a:hover {
+    color: #FFD700;
+}
+
+/* Newsletter Input Group */
+.input-group {
+    display: flex;
+    margin-top: 15px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #333;
+    background: #111;
+    color: #fff;
+    outline: none;
+}
+
+.join-btn {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.join-btn:hover {
+    background-color: #e5c100;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+/* --- Desktop Styles (Base) --- */
+.luxury-container {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1200px; /* Limits width on ultra-wide screens */
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.luxury-viewport {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Default desktop height */
+  overflow: hidden;
+  background: #111;
+  border-radius: 4px;
+}
+
+.luxury-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lux-slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.lux-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lux-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  color: #fff;
+  z-index: 5;
+  padding-right: 20px;
+}
+
+.lux-overlay h2 {
+  color: #FFD700;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+}
+
+.lux-overlay p {
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  margin-top: 5px;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+}
+
+.lux-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 215, 0, 0.6);
+  color: #FFD700;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+-webkit-tap-highlight-color: transparent
+}
+
+
+.lux-prev { left: 20px; }
+.lux-next { right: 20px; }
+
+/* --- MOBILE RESPONSIVENESS --- */
+
+/* For Tablets */
+@media (max-width: 768px) {
+  .luxury-viewport {
+    height: 400px;
+  }
+  .lux-overlay h2 {
+    font-size: 2rem;
+  }
+}
+
+/* For Mobile Phones */
+@media (max-width: 480px) {
+  .luxury-viewport {
+    height: 260px; /* Shorter height for phones */
+  }
+  
+  .lux-overlay {
+    bottom: 20px;
+    left: 15px;
+  }
+
+  .lux-overlay h2 {
+    font-size: 1.2rem; /* Smaller text */
+    letter-spacing: 1px;
+  }
+
+  .lux-overlay p {
+    font-size: 0.8rem;
+  }
+
+ .lux-nav {
+  width: clamp(40px, 10vw, 60px);  /* ✅ responsive */
+  height: clamp(40px, 10vw, 60px); /* ✅ same as width */
+
+  font-size: clamp(16px, 3vw, 22px);
+
+  border-width: 1px;
+  border-radius: 50%; /* ✅ perfect circle */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0; /* IMPORTANT */
+}
+  
+  .lux-prev { left: 10px; }
+  .lux-next { right: 10px; }
+}
+.lux-nav:hover {
+  transform: scale(1.1);
+  background: rgba(0,0,0,0.6);
+}
+.banner-hero {  
+    position: relative;  
+    width: 100%;  
+    min-height: clamp(320px, 60vh, 700px); /* responsive height */
+    overflow: hidden;  
+    background: #000;  
+    font-family: 'Segoe UI', Arial, sans-serif;  
+}  
+
+.banner-overlay {  
+    position: absolute;  
+    inset: 0;
+    background: 
+        linear-gradient(to right, rgba(0,0,0,0.9), transparent),
+        linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+    z-index: 2;  
+}  
+
+.banner-img {  
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+    display: block;
+}  
+
+.banner-content {  
+    position: absolute;  
+    bottom: clamp(20px, 8%, 80px);  
+    left: clamp(16px, 6%, 80px);  
+    z-index: 10;  
+    max-width: 90%;
+}  
+
+.banner-title {  
+    color: #ffd700;  
+    font-size: clamp(28px, 6vw, 70px);  
+    font-weight: 800;  
+    text-transform: uppercase;  
+    letter-spacing: clamp(2px, 0.5vw, 6px);  
+    margin: 0 0 10px 0;  
+    line-height: 1.1;  
+}  
+
+.banner-subtitle {  
+    color: #ffffff;  
+    font-size: clamp(10px, 2vw, 20px);  
+    letter-spacing: clamp(1px, 0.3vw, 3px);  
+    text-transform: uppercase;  
+    opacity: 0.9;  
+    font-weight: 300;  
+    line-height: 1.5;  
+
+    border-left: 3px solid #ffd700;  
+    padding-left: 14px;  
+    max-width: 500px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .banner-hero {
+        min-height: 300px;
+    }
+    .banner-content {
+        bottom: 10%;
+        left: 5%;
+    }
+}
+body{
+opacity:0;
+transition:opacity 0.8s ease;
+}
+
+body.loaded{
+opacity:1;
+}
+.lux-slide img{
+transition:transform 0.6s ease;
+}
+
+.lux-slide:hover img{
+transform:scale(1.08);
+}
+.divider{
+width:120px;
+height:3px;
+background:linear-gradient(to right,transparent,#FFD700,transparent);
+margin:60px auto;
+}
+
+.some-class{
+text-shadow:0 0 10px rgba(255,215,0,0.7);
+}
+/* GOLD PROGRESS BAR */
+
+.lux-progress{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:4px;
+background:rgba(255,255,255,0.2);
+}
+
+.lux-progress-bar{
+height:100%;
+width:0%;
+background:linear-gradient(90deg,#d4af37,#ffd700,#fff3b0);
+transition:0.5s;
+}
+
+
+/* DOT NAVIGATION */
+
+.lux-dots{
+position:absolute;
+bottom:18px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:10px;
+}
+
+
+.lux-dot {
+    width: clamp(7px, 1.5vw, 12px);      /* scales from 6px to 12px depending on screen */
+    height: clamp(7px, 1.5vw, 12px);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: 0.4s;
+    margin: clamp(4px, 1vw, 8px); /* optional spacing between dots */
+}
+
+.lux-dot.active{
+background:#FFD700;
+box-shadow:0 0 10px #FFD700;
+}
+
+
+/* SLIDE COUNTER */
+
+.lux-counter{
+position:absolute;
+top:20px;
+right:20px;
+color:white;
+font-size:14px;
+letter-spacing:2px;
+background:rgba(0,0,0,0.4);
+padding:6px 12px;
+border-radius:20px;
+backdrop-filter:blur(6px);
+z-index:1000;
+}
+.luxury-viewport{
+position:relative;
+overflow:hidden;
+}
+.credit-title{
+    font-family:"Cinzel",serif;
+font-size:32px;
+color:black;
+margin-bottom:20px;
+text-align:center;
+}
+.premium-credit {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--bg-color); /* Adapts to your theme toggle */
+    transition: background-color 0.3s ease;
+}
+
+/* Elegant line that grows from the center */
+.credit-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--accent-gold);
+    margin: 0 auto 30px auto;
+    opacity: 0.5;
+}
+
+.credit-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.curated-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Very wide spacing for luxury feel */
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.brand-signature {
+    font-family: "Cinzel", serif; /* Matching your estate titles */
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.credit-year {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--accent-gold);
+    opacity: 0.8;
+}
+
+/* Add a subtle hover effect on the signature */
+.brand-signature:hover {
+    color: var(--accent-gold);
+    cursor: default;
+    transition: color 0.4s ease;
+}
+.social-row {
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.social-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--text-color);
+    opacity: 0.5;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Elegant Animated Underline */
+.social-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--accent-gold);
+    transition: width 0.3s ease;
+}
+
+.social-link:hover {
+    opacity: 1;
+    color: var(--accent-gold);
+}
+
+.social-link:hover::after {
+    width: 100%;
+}
+:root {
+    --cj-gold: #c5a059;
+    --cj-white: #ffffff;
+    --cj-gray: #a0a0a0;
+    --cj-ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cj-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    border-top: 1px solid rgba(197, 160, 89, 0.2);
+    font-family: 'Inter', sans-serif;
+    background: transparent;
+}
+
+.cj-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    cursor: pointer;
+    transition: background 0.5s;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.cj-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--cj-gold);
+    font-weight: 600;
+}
+
+.cj-plus {
+    font-size: 24px;
+    color: var(--cj-gold);
+    transition: transform 0.5s var(--cj-ease);
+    font-weight: 200;
+}
+
+/* The Secret to Smoothness */
+.cj-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.7s var(--cj-ease), opacity 0.4s ease;
+}
+
+.cj-inner {
+    padding: 10px 15px 30px 15px;
+}
+
+.cj-title {
+    font-size: 24px;
+    color: var(--cj-white);
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.cj-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--cj-gray);
+    margin-bottom: 20px;
+}
+
+.cj-line {
+    width: 40px;
+    height: 2px;
+    background: var(--cj-gold);
+}
+
+/* Active States */
+.cj-wrapper.active .cj-content {
+    max-height: 600px; /* High enough to fit your text */
+    opacity: 1;
+}
+
+.cj-wrapper.active .cj-plus {
+    transform: rotate(45deg);
+}
+:root {
+    --gold: #D4AF37;
+    --gold-fade: rgba(212, 175, 55, 0.1);
+    --glass: rgba(255, 255, 255, 0.03);
+}
+
+/* The Button */
+.brief-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    padding: 14px 40px;
+    margin: 30px auto;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Extreme spacing = Luxury */
+    font-weight: 600;
+    color: white;
+    background: black; 
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 2px; /* Sharp corners often look more 'high fashion' than pills */
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.brief-toggle:hover {
+    letter-spacing: 6px;
+    border-color: var(--gold);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+/* The Content Box */
+.brief-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s;
+    opacity: 0;
+    background: var(--glass);
+    border-radius: 4px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.brief-wrapper.active .brief-content {
+    max-height: 1000px;
+    opacity: 1;
+    border-bottom: 1px solid var(--gold-fade);
+}
+
+/* Inner Text Styling */
+.premium-inner {
+    padding: 40px 20px;
+}
+.summary-text {
+    font-family: 'Lora', serif; /* Use a Serif font for the body */
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* The Info Grid - The Premium Secret */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 30px;
+}
+
+.info-label {
+    display: block;
+    font-size: 9px;
+    color: var(--gold);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.info-value {
+    font-size: 13px;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.highlights-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(212, 175, 55, 0.05);
+    border-left: 2px solid var(--gold);
+}
+
+.highlight-title {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.section{
+  padding:clamp(40px,8vh,100px) 0;
+}
+@media (max-width:480px){
+
+  .hero-title{
+    font-size:24px;
+  }
+
+  .hero-subtitle{
+    font-size:12px;
+  }
+
+  .button{
+    width:100%;
+    text-align:center;
+  }
+
+}
+@media (max-width:768px){
+
+  .hero{
+    height:70vh;
+    padding:0 3vw;
+  }
+
+  .hero-title{
+    font-size:28px;
+  }
+
+  .info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .top-bar{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+}
+@media (max-width:1024px){
+
+  .hero{
+    height:80vh;
+  }
+
+  .info-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+@media (max-width: 360px) {
+  .banner-content {
+    bottom: 8%;
+    left: 3%;
+  }
+  .cinzel-title {
+    font-size: 22px;
+  }
+}
+
+.luxury-grid {
+  display: grid;
+  padding: 10px;
+  gap: 10px; /* Space between cards */
+  width: 100%;
+}
+
+
+
+
+:root {
+    --gold: #d4af37; /* A more "real" gold than pure yellow */
+    --gold-bright: #ffd700;
+    --dark-card: #121212;
+}
+
+.featured-gallery {
+    padding: 80px 5%;
+    background: var(--bg-color);
+}
+
+.featured-title {
+    color: var(--gold);
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 8px; /* Luxury is in the spacing */
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+/* Base Grid - Desktop First */
+.premium-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    padding: 20px;
+}
+
+.luxury-card {
+    position: relative;
+    background: rgba(26, 26, 26, 0.85); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 0px; 
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.luxury-card:hover {
+    transform: translateY(-12px) scale(1.01);
+    background: rgba(30, 30, 30, 0.95);
+    border-color: rgba(212, 175, 55, 0.6);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 
+                0 0 20px rgba(212, 175, 55, 0.1);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.card-image {
+    position: relative;
+    height: 60%;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.2s ease;
+}
+
+/* Tablet - 768px */
+@media (max-width: 1024px) {
+    .premium-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
+/* Mobile - 480px */
+@media (max-width: 768px) {
+    .premium-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .luxury-card:hover {
+        transform: translateY(-8px) scale(1.02); /* Less heavy on small devices */
+    }
+}
+
+/* Small Mobile - 480px and below */
+@media (max-width: 480px) {
+    .premium-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .luxury-card:hover {
+        transform: translateY(-5px) scale(1.01); /* Minimal movement for 2GB+ devices */
+        transition: all 0.4s ease-in-out;
+    }
+
+    .card-image {
+        height: 50%; /* Slightly smaller images on tiny screens */
+    }
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.8));
+}
+
+.card-details {
+    padding: 25px 20px;
+    text-align: left; /* Center looks casual, Left looks professional */
+}
+
+.card-details span {
+    color: var(--gold);
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.card-details h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif; /* Suggest adding a Serif font */
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.card-details p {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+
+.luxury-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 1100px) { .premium-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 650px) { .premium-grid { grid-template-columns: 1fr; } }
+
+/* 1. Spotlight Effect: When container is hovered, dim cards that are NOT hovered */
+.premium-grid:has(.luxury-card:hover) .luxury-card:not(:hover) {
+    filter: blur(2px) grayscale(0.5);
+    opacity: 0.6;
+}
+
+
+/* 2. The "Reveal" Button (Add this inside .card-details in HTML) */
+.view-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 0;
+    color: var(--gold);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.4s ease;
+}
+
+.luxury-card:hover .view-btn {
+    opacity: 1;
+    transform: translateY(0);
+    border-bottom: 1px solid var(--gold);
+}
+
+/* 3. Luxury Image Treatment */
+.card-image img {
+    filter: contrast(1.1) brightness(0.9); /* Makes photos look 'editorial' */
+    transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.premium-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    padding: 12px 28px;
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: 1px solid var(--gold);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    background: transparent;
+    z-index: 1;
+}
+
+/* The Animated Background Fill */
+.premium-btn::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Starts hidden at the bottom */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gold);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1; /* Stays behind the text */
+}
+
+/* Button Hover State */
+.premium-btn:hover {
+    color: #000; /* Text turns black when background turns gold */
+}
+
+.premium-btn:hover::before {
+    top: 0; /* Slides the gold fill up */
+}
+
+/* Icon Animation */
+.premium-btn svg {
+    transition: transform 0.4s ease;
+}
+
+.premium-btn:hover svg {
+    transform: translateX(5px);
+}
+
+/* Reveal Animation (Matches the card hover) */
+.luxury-card .premium-btn {
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.luxury-card:hover .premium-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    padding: 6px 15px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1a1a1a; /* Dark text on gold */
+    background: linear-gradient(
+        45deg, 
+        #d4af37 0%, 
+        #fef1a2 50%, 
+        #d4af37 100%
+    );
+    background-size: 200% auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-radius: 2px; /* Sharp corners = Architectural/Premium */
+    animation: shine 3s linear infinite;
+}
+
+/* The Metallic Shimmer Animation */
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+.premium-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.premium-btn::after {
+    content: "";
+    width: 25px;
+    height: 15px;
+    /* This encodes your SVG arrow into a data URI */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 15" fill="none" stroke="white" stroke-width="1.5"><path d="M1 7.5H24M24 7.5L17.5 1M24 7.5L17.5 14"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+/* Subtle "Sold" or "Exclusive" variant */
+.card-badge.exclusive {
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    backdrop-filter: blur(5px);
+}
+
+
+
+/* ===================== */
+/* Responsive Estate Info */
+/* ===================== */
+
+.estate-info {
+    max-width: clamp(300px, 90%, 900px);  /* scales down on small screens */
+    margin: clamp(20px, 5vw, 60px) auto;  /* responsive vertical margin */
+    padding: clamp(20px, 5vw, 40px);      /* responsive padding */
+    
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: clamp(8px, 1vw, 12px);
+    
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Title */
+.estate-title {
+    font-family: "Cinzel", serif;
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* scales from mobile to desktop */
+    color: #FFD700;
+    margin-bottom: clamp(15px, 3vw, 20px);
+    text-align: center;
+}
+
+/* Description */
+.estate-description {
+    font-family: "Lora", serif;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* responsive font size */
+    line-height: 1.8;
+    color: #ddd;
+    text-align: center;
+}
+
+/* Details Grid */
+.estate-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(80px, 20%, 150px), 1fr)); /* responsive columns */
+    gap: clamp(10px, 2vw, 20px);  /* responsive gap */
+    margin-top: clamp(20px, 5vw, 30px);
+}
+
+/* Each Detail Box */
+.detail {
+    padding: clamp(10px, 2vw, 15px); /* responsive padding */
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: clamp(5px, 1vw, 8px);
+    text-align: center;
+    background: var(--bg-color, rgba(0,0,0,0.2)); /* fallback if var missing */
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1rem); /* responsive text */
+}
+
+.key-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+
+    /* Thinner, more elegant padding */
+    padding: 12px 32px;
+    margin: 30px auto;
+
+    /* Typography is key for premium feel */
+    font-size: 13px;             /* Smaller font is often more 'luxury' */
+    text-transform: uppercase;    /* All caps for authority */
+    letter-spacing: 2px;         /* Wide spacing looks expensive */
+    font-weight: 500;
+    color: var(--text-color);
+
+    /* Background & Border */
+    background: var(--bg-color); 
+    border: 1px solid rgba(212, 175, 55, 0.4); /* Muted Gold */
+    border-radius: 100px;        /* Perfect pill shape */
+
+    /* Smoothness */
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect - The 'Glow' */
+.key-toggle:hover {
+    border-color: #D4AF37;
+    background: var(--bg-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.15); /* Soft gold glow */
+}
+
+/* Make the arrow smaller and thinner */
+.arrow-2 {
+    font-size: 10px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* When the description is open (add this class via JS) */
+.key-toggle.active .arrow-2 {
+    transform: rotate(180deg);
+}
+
+/* description box */
+.brief-content-2 {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+
+    /* Use variables instead of hardcoded white/black */
+    background: var(--bg-color); 
+    color: var(--text-color);    
+
+    padding: 0 18px;
+    border-radius: 12px; /* Smoother premium corners */
+    margin-top: 10px;
+    
+    /* Optional: subtle border to define the area in light mode */
+    border: 1px solid rgba(128, 128, 128, 0.1); 
+}
+
+/* Fix the text color inside the list */
+.lora-title-2 ul li {
+    color: var(--text-color);
+    margin-bottom: 12px;
+    line-height: 1.6; /* Makes it look less like a 'dense' notebook */
+}
+
+
+.brief-content-2 p{
+margin:12px 0;
+color:var(--bg-color);
+}
+/* Initial state of all lazy images */
+.lazy {
+  opacity: 0;                /* Hide until loaded */
+  transition: opacity 0.5s ease-in-out;  /* Smooth fade-in */
+  display: block;            /* Prevent layout shift */
+  width: 100%;               /* Ensure images fill slider container */
+  height: auto;              /* Maintain aspect ratio */
+  object-fit: cover;         /* Cover without stretching */
+}
+
+/* When the image has loaded */
+.lazy.loaded {
+  opacity: 1;                /* Fade in when loaded */
+}
+
+/* Optional: slider frame overflow hidden */
+.luxury-container {
+  overflow: hidden;
+  position: relative;
+}
