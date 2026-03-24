@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shanghai – Luxury Destinations & Premium Estates</title>
+        <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        
+
+<link rel="stylesheet" href="main-global-body.css">
+ <body data-page="shanghai">
+<!-- Luxury Preloader -->
+<div id="lux-loader">
+    <div class="loader-inner">
+        <img src="https://i.postimg.cc/your-logo.png" alt="Aryan Singh Logo" class="loader-logo">
+        <div class="loader-ring"></div>
+    </div>
+</div>
+    
+
+        <nav class="master-pill-nav">
+    <div class="pill-inner">
+        <div id="master-menu" style="display:none;"> <!-- must match 'master-menu' -->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+        <div class="pill-logo">
+            SHANGHAI
+        <span>CITY</span></div>
+
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <div class="toggle-icon">
+                <i id="theme-icon" class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="menu-btn" onclick="togglePremiumMenu()">
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+</div>
+
+<nav class="side-nav" id="sideNav">
+  <div class="nav-header">
+    <h2 class="nav-logo">SHANGHAI_<span>ESTATES</span></h2>
+  </div>
+   <ul class="nav-links">
+  <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="paris.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Paris</a></li>
+  <li><a href="london.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> London</a></li>
+  <li><a href="new-york.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> New York</a></li>
+  
+  <li><a href="dubai.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Dubai</a></li>
+  <li><a href="#homepage" target="_blank" rel="noopener noreferrer"><i class="fas fa-images"></i> Gallery</a></li>
+  <li><a href="exclusive.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-gem"></i> Exclusive</a></li>
+  <li><a href="faq.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-question-circle"></i> FAQ</a></li>
+  <li><a href="contact.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Contact</a></li>
+</ul>
+  <div class="nav-footer">
+    <p>© 2026 Premium Collection</p>
+  </div>
+</nav>
+
+<div class="menu-blur" id="menuBlur" onclick="togglePremiumMenu()"></div>
+
+
+    <div class="banner-hero">
+    <div class="banner-overlay"></div>
+
+    <img src="https://i.postimg.cc/VLjJzkwV/michael-held-Ty41w3K-YPo-unsplash.jpg" 
+         alt="Luxury Estate Background" class="banner-img">
+
+    <div class="banner-content">
+        <h1 class="banner-title">
+        SHANGHAI
+         <br> <span>CITY</span>
+        </h1>
+        <p class="banner-subtitle">
+            Where Heritage Rises <br>Into the Future”
+        </p>
+    </div>
+</div>
+<div id="homepage"></div>
+<div class="divider"></div>
+<div class="cinzel-title">The Rise of Shanghai’s Skyline</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/3r237ryq/road_trip_with_raj_py8ey_Ah9J3A_unsplash.jpg" alt="Shanghai Tower">
+        <div class="lux-overlay">
+          <h2>SHANGHAI TOWER</h2>
+          <p>The tallest building in China.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/gc3Gdcww/daniel_chen_b6nr1s_Ec_REM_unsplash.jpg" alt="Shanghai Skyline">
+        <div class="lux-overlay">
+          <h2>SHANGHAI SKYLINE</h2>
+          <p>A futuristic blend of innovation and design.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/63vt8tMQ/zhou_xian_7t_FFO6Mq5L4_unsplash.jpg" alt="Lujiazui District">
+        <div class="lux-overlay">
+          <h2>LUJIAZUI DISTRICT</h2>
+          <p>The financial heart of modern Shanghai.</p>
+        </div>
+      </div>
+
+     </div>
+
+
+    <!-- ARROWS -->
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this,-1)">❮</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this,1)">❯</button>
+
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+
+<div class="divider"></div>
+
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    
+    <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The Shanghai Tower is China’s tallest skyscraper and the world’s second tallest building, standing at 632 meters in the Lujiazui financial district. Completed in 2015, it is a marvel of modern engineering and sustainability, featuring a unique twisting design and sky-high observation decks.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Lujiazui, Shanghai, China</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 09:00 – 21:00</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Completed</span>
+                <span class="info-value">2015</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Observation Decks: Visitors can enjoy 360-degree views of Shanghai from multiple high floors.<br>
+                Fastest Elevator: Reach the top in just 55 seconds with one of the world’s fastest lifts.<br>
+                Modern Architecture: Experience the tower’s twisting design and sustainable features.<br>
+                Night Views: The city lights from above create an unforgettable experience.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Shanghai Tower</h2>
+            <p class="cj-text">
+                Standing tall in the heart of Shanghai’s financial district, the Shanghai Tower combines elegance and cutting-edge engineering. Visitors can ascend to its sky-high observation decks, marvel at the twisting façade, and enjoy one of the most spectacular city views in the world.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+ <div class="divider"></div>
+<div class="cinzel-title">The Iconic Pearl of Shanghai</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/CMbwYMZm/edward_he_u_Kyz_XEc2k_s_unsplash.jpg" alt="Oriental Pearl Tower">
+        <div class="lux-overlay">
+          <h2>ORIENTAL PEARL TOWER</h2>
+          <p>A futuristic symbol of Shanghai’s skyline.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/sxGyZyKs/kaja_sariwating_te0QLo17Z4_unsplash.jpg" alt="Shanghai Night View">
+        <div class="lux-overlay">
+          <h2>SHANGHAI AT NIGHT</h2>
+          <p>A dazzling city illuminated with modern brilliance.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/qRcDBS4B/mahosadha_ong_OPCq0GQa_FFQ_unsplash.jpg" alt="Lujiazui Skyline">
+        <div class="lux-overlay">
+          <h2>LUJIAZUI SKYLINE</h2>
+          <p>The heart of Shanghai’s financial district.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+   <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The Oriental Pearl TV Tower is Shanghai’s iconic landmark located in Pudong. Completed in 1994, the tower stands at 468 meters and is famous for its distinctive spheres, futuristic design, and panoramic observation decks overlooking the Huangpu River.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Pudong, Shanghai, China</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 08:00 – 21:00</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Completed</span>
+                <span class="info-value">1994</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Observation Spheres: Experience multiple levels of panoramic views of Shanghai.<br>
+                Transparent Skywalk: Dare to walk on the glass-bottom skywalk for a thrilling view.<br>
+                History & Culture: The tower includes a small museum explaining its construction and significance.<br>
+                Night Illumination: The tower lights up beautifully after dark, creating stunning photo opportunities.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Oriental Pearl TV Tower</h2>
+            <p class="cj-text">
+                With its futuristic spheres and towering height, the Oriental Pearl TV Tower is an emblem of modern Shanghai. Visitors can explore observation decks, walk the glass skywalk, and enjoy sweeping views of the Huangpu River and city skyline.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+<div class="cinzel-title">The Tranquil Beauty of Yu Garden</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/yx21fWWK/mche_lee_1Jmj_Jopv6b8_unsplash.jpg" alt="Yu Garden Pavilion">
+        <div class="lux-overlay">
+          <h2>YU GARDEN</h2>
+          <p>A masterpiece of classical Chinese landscape design.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/YStpD524/timothee_gidenne_q_OAvq_G6_Kmc_unsplash.jpg" alt="Traditional Architecture">
+        <div class="lux-overlay">
+          <h2>TRADITIONAL PAVILIONS</h2>
+          <p>Elegant structures reflecting ancient Chinese artistry.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/BbjZc2SM/yang_song_y8y_R7y3u_XBM_unsplash.jpg" alt="Garden Landscape">
+        <div class="lux-overlay">
+          <h2>SERENE LANDSCAPES</h2>
+          <p>A peaceful retreat in the heart of Shanghai.</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+ 
+ <div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+  <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            Yu Garden is a classical Chinese garden located in Shanghai’s old city, dating back to the Ming Dynasty. Known for its exquisite landscaping, traditional pavilions, rockeries, ponds, and stone bridges, it provides visitors a serene escape from the bustling city while showcasing China’s ancient garden design and cultural heritage.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Huangpu District, Shanghai, China</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 08:30 – 16:45</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Established</span>
+                <span class="info-value">1559 (Ming Dynasty)</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Scenic Walks: Meander through pavilions, rockeries, and tranquil ponds.<br>
+                Historical Architecture: Admire traditional Ming-era design and craftsmanship.<br>
+                Cultural Insight: Learn about classical Chinese gardening and heritage.<br>
+                Photography & Relaxation: Perfect spot for serene photos and quiet reflection away from the city hustle.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Yu Garden</h2>
+            <p class="cj-text">
+                Yu Garden is a masterpiece of classical Chinese landscaping, offering visitors a peaceful retreat into history. With winding paths, ornate pavilions, and koi-filled ponds, it captures the elegance of Ming Dynasty garden artistry.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  <div class="divider"></div>
+<div class="cinzel-title">The Timeless Elegance of The Bund</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+    
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/XY1Lk8zT/himmel_s_Jo_LHMXp_OR0_unsplash.jpg" alt="The Bund Waterfront">
+        <div class="lux-overlay">
+          <h2>THE BUND</h2>
+          <p>A historic waterfront along the Huangpu River.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/vTcSh74T/darren-nunis-ib9e1Amyh-CI-unsplash.jpg" alt="Shanghai Night Skyline">
+        <div class="lux-overlay">
+          <h2>SHANGHAI NIGHT SKYLINE</h2>
+          <p>A dazzling fusion of history and modernity.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/6ppzZSMB/himmel_s_JQGIWtz5EQY_unsplash.jpg" alt="Huangpu River View">
+        <div class="lux-overlay">
+          <h2>HUANGPU RIVER</h2>
+          <p>The lifeline flowing through Shanghai’s heart.</p>
+        </div>
+      </div>
+      
+    </div>
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+   <div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+   <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The Bund is Shanghai’s historic waterfront area along the western bank of the Huangpu River. Famous for its stunning collection of colonial-era buildings and panoramic river views, it represents the fusion of East and West in Shanghai’s architectural heritage. Visitors can stroll along the promenade and enjoy the skyline of modern Pudong across the river.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Huangpu District, Shanghai, China</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 24 Hours</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Established</span>
+                <span class="info-value">Late 19th Century</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Riverside Walks: Enjoy scenic strolls along the promenade with the skyline in the background.<br>
+                Architectural Tour: Marvel at historic colonial-era buildings with European-inspired designs.<br>
+                Night Views: The Bund lights up at night, offering spectacular photo opportunities.<br>
+                Cruises & Dining: Optional river cruises and riverside restaurants provide a full Shanghai experience.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">The Bund</h2>
+            <p class="cj-text">
+                The Bund is a vibrant historic district where Shanghai’s past meets the present. Visitors can explore iconic colonial buildings, enjoy panoramic river views, and experience the city’s lively waterfront atmosphere.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+   
+    <div class="divider"></div>
+<div class="cinzel-title">The Heights of Modern Shanghai</div>
+
+<div class="luxury-container">
+  <div class="luxury-viewport">
+    
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/SRYqzqV0/shwetha_anand_fe_Fl_SE0Bdbk_unsplash.jpg" alt="Shanghai World Financial Center">
+        <div class="lux-overlay">
+          <h2>SHANGHAI WORLD FINANCIAL CENTER</h2>
+          <p>A global icon of finance and architectural excellence.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/mD5BDh3G/a_l_e_x_9zj_Pa_XFeuw_unsplash.jpg" alt="Shanghai Skyline">
+        <div class="lux-overlay">
+          <h2>SHANGHAI SKYLINE</h2>
+          <p>A breathtaking display of futuristic skyscrapers.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img loading="lazy" width="800" height="500"
+        src="https://i.postimg.cc/280Pb2KW/jared_lisack_RWG8c_Yty_IZ4_unsplash.jpg" alt="Lujiazui District">
+        <div class="lux-overlay">
+          <h2>LUJIAZUI DISTRICT</h2>
+          <p>The financial core of Shanghai’s modern economy.</p>
+        </div>
+      </div>
+        
+    </div>
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+   <div class="brief-content">
+    <div class="premium-inner">
+        <p class="summary-text">
+            The Shanghai World Financial Center (SWFC) is a supertall skyscraper located in the Lujiazui area of Pudong. Completed in 2008, it stands 492 meters tall and is known for its distinctive trapezoid aperture at the top. The tower combines modern architecture with world-class observation decks, offices, hotels, and retail spaces.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">Lujiazui, Shanghai, China</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Visiting Hours</span>
+                <span class="info-value">Daily 09:00 – 21:00</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Completed</span>
+                <span class="info-value">2008</span>
+            </div>
+        </div>
+
+        <div class="highlights-box">
+            <h4 class="highlight-title">Visitor Experience</h4>
+            <p>
+                Observation Decks: Visitors can enjoy panoramic views of Shanghai from the top floors.<br>
+                Glass Skywalk: Dare to walk on the transparent sky deck for thrilling views.<br>
+                Modern Architecture: Marvel at the iconic trapezoid aperture and innovative design.<br>
+                Hotels & Shopping: The tower includes luxury hotels and shopping areas, making it a full experience destination.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">Shanghai World Financial Center</h2>
+            <p class="cj-text">
+                Shanghai World Financial Center is a symbol of modern Shanghai, blending architectural elegance with cutting-edge engineering. Visitors can explore its observation decks, enjoy breathtaking city views, and experience one of the most iconic skyscrapers in the world.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  
+ <div class="divider"></div>
+
+
+  
+    
+<section class="premium-credit">
+    <div class="credit-divider"></div>
+    <div class="credit-content">
+        <span class="curated-text">Curated & Crafted by</span>
+        <h3 class="brand-signature">Template by Exclusive Estates Studio </h3>
+        
+        <div class="social-row">
+            <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw==" class="social-link">Instagram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Portfolio</a>
+        </div>
+
+        <p class="credit-year">© 2026 Architectural Excellence</p>
+    </div>
+</section>
+
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-section brand-info">
+            <h2 class="logo"><span class="yellow">LUXURY</span><span class="red-text">Estates</span></h2>
+            <p class="description">
+                Redefining elegance and luxury. We provide the world's most exclusive famous gallery for the modern architect enthusiast.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw=="><i class="fab fa-instagram"></i></a>
+                <a href="#homepage"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#homepage">Gallery</a></li>
+                <li><a href="exclusive.html">Most Expensive</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Credits for images</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="https://postimages.org/">Post Images</a></li>
+                <li><a href="https://unsplash.com">Unsplash</a></li>
+                <li><a href="https://pixabay.com">Pixaby</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Get In Touch</h3>
+            <div class="accent-line"></div>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> premiumweb@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Chhattisgarh, INDIA</li>
+                <li><i class="fas fa-phone"></i> +91 77249 77137</li>
+            </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <div class="accent-line"></div>
+            <p>Subscribe to get updates on new arrivals.</p>
+            <div class="input-group">
+                <input type="email" placeholder="Your Email">
+                <button class="join-btn">Join</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Luxury Estates Website. Designed by Aryan Kumar Singh.</p>
+    </div>
+</footer>
+
+    
+<script src="global-body.js"></script>
+<script src="main-specific.js"></script>
+<script src="lazy-loading.js"></script>
+       
+    </body>
+</html>
