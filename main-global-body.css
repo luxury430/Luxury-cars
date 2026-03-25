@@ -337,10 +337,7 @@ body {
 }
 
 
-.side-nav.active {
-  right: 0;
-  visibility: visible; /* Show it only when active */
-}
+
 
 .bar {
   width: 100%;
@@ -374,22 +371,21 @@ body {
 .side-nav {
   position: fixed;
   top: 0;
-  right: 0; /* keep it 0 */
-  width: min(450px, 50%);
+  right: -100%; /* better than -350px */
+  width: min(320px, 60%); /* responsive width */
   height: 100vh;
-
-  background: rgba(5, 5, 5, 0.95);
-  backdrop-filter: blur(20px);
-  border-left: 1px solid rgba(255, 215, 0, 0.4);
-
-  transform: translateX(100%); /* HIDE completely */
-  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-
+  background: rgba(5, 5, 5, 0.9);
+  backdrop-filter: blur(15px);
+  border-left: 1px solid rgba(255, 215, 0, 0.3);
   z-index: 1999;
+  transition: right 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(20px, 5vw, 40px);
 }
-/* Sidebar Styling */
+
 .side-nav.active {
-  transform: translateX(0);
+  right: 0;
 }
 
 
