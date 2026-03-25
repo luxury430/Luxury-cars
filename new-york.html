@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New York – Luxury Destinations & Premium Estates</title>
+        <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        
+
+<link rel="stylesheet" href="main-global-body.css">
+ </head>
+   <body data-page="new-york">
+<!-- Luxury Preloader -->
+<div id="lux-loader">
+    <div class="loader-inner">
+        <img src="https://i.postimg.cc/your-logo.png" alt="Aryan Singh Logo" class="loader-logo">
+        <div class="loader-ring"></div>
+    </div>
+</div>
+          
+
+        
+
+        <nav class="master-pill-nav">
+    <div class="pill-inner">
+        <div id="master-menu" style="display:none;"> <!-- must match 'master-menu' -->
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+        <div class="pill-logo">
+            NEW  YORK
+        <span>CITY</span></div>
+
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <div class="toggle-icon">
+                <i id="theme-icon" class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="menu-btn" onclick="togglePremiumMenu()">
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+  <div class="btn-line"></div>
+</div>
+
+<nav class="side-nav" id="sideNav">
+  <div class="nav-header">
+    <h2 class="nav-logo">NEW YORK<span>ESTATES</span></h2>
+  </div>
+  <ul class="nav-links">
+  <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+  <li><a href="paris.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Paris</a></li>
+  <li><a href="london.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> London</a></li>
+  
+  <li><a href="shanghai.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Shanghai</a></li>
+  <li><a href="dubai.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Dubai</a></li>
+  <li><a href="#homepage" target="_blank" rel="noopener noreferrer"><i class="fas fa-images"></i> Gallery</a></li>
+  <li><a href="exclusive.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-gem"></i> Exclusive</a></li>
+  <li><a href="faq.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-question-circle"></i> FAQ</a></li>
+  <li><a href="contact.html" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> Contact</a></li>
+</ul>
+  <div class="nav-footer">
+    <p>© 2026 Premium Collection</p>
+  </div>
+</nav>
+
+<div class="menu-blur" id="menuBlur" onclick="togglePremiumMenu()"></div>
+
+
+    <div class="banner-hero">
+    <div class="banner-overlay"></div>
+
+    <img src="https://i.postimg.cc/0jJW3KVw/matthew_daniels_ut_OBNqp_Z6w_M_unsplash.jpg" 
+         alt="Luxury Estate Background" class="banner-img">
+
+    <div class="banner-content">
+        <h1 class="banner-title">
+        NEW-YORK
+         <br> <span>CITY</span>
+        </h1>
+        <p class="banner-subtitle">
+            The city where technology combines<br>with nature
+        </p>
+    </div>
+</div>
+<div id="homepage"></div>
+<div class="divider"></div>
+<div class="cinzel-title reveal">Most Expensive Neighbourhood in NYC.</div>
+
+<div class="luxury-container reveal">
+  <div class="luxury-viewport reveal">
+
+    <!-- COUNTER -->
+    <div class="lux-counter reveal">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/sDfWN8Lb/jason_pischke_G58Nyod4KCs_unsplash.jpg">
+        <div class="lux-overlay">
+          <h2>HUDSON YARDS</h2>
+          <p> Most expensive Neighbourhood.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/NjHjJkQz/clay_banks_E4bn9Scil_AA_unsplash.jpg">
+        <div class="lux-overlay">
+          <h2>HUDSON YARDS</h2>
+          <p>The peak of luxury living.</p>
+        </div>
+      </div>
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/KYhvd3zv/mitch_hodiono_5IAn_y_KBYl_M_unsplash.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>NEW-YORK</h2>
+          <p>British Monarch Estate.</p>
+        </div>
+      </div>
+
+     
+    </div>
+
+    <!-- ARROWS -->
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this,-1)">❮</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this,1)">❯</button>
+
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+        <div class="premium-inner">
+            <p class="summary-text">
+                Hudson Yards is a massive, modern mixed-use development on Manhattan’s West Side, recognized as the largest private real estate project in U.S. history. Built over active rail yards, this new neighborhood features luxury residences,100+ shops/restaurants, iconic architecture, 14 acres of public space, and the Equinox Hotel. 
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Westminster, London</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Summer Tours</span>
+                    <span class="info-value">July 9 – Sept 27</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Heritage</span>
+                    <span class="info-value">Established 1703</span>
+                </div>
+            </div>
+
+            <div class="highlights-box">
+                <h4 class="highlight-title">Visitor Experience</h4>
+                <p>Developer Stephen Ross described the $25 billion Hudson Yards project by stating, "I bet on New York," while marketing framed the site as the "new heart of New York".</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">The Concrete Jungle</h2>
+            <p class="cj-text">
+                New York City is a symphony of glass and steel. From the high-energy 
+                pulse of Midtown to the historic brownstones of the West Village, 
+                every corner reveals a new layer of the world's most iconic skyline.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  
+<div class="divider"></div>
+<div class="cinzel-title reveal">The Tallest Estate Ever.</div>
+<div class="luxury-container reveal">
+  <div class="luxury-viewport">
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/ZnNt5HKB/david_vives_Rpgww68uv_Yg_unsplash.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>ONE WORLD TRADE CENTER</h2>
+          <p>FININCIAL HUB.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/9095QbFz/denil_dominic_u_Ys_HR0Pr_Xto_unsplash.jpg" loading="lazy" alt="Estate 2">
+        <div class="lux-overlay">
+          <h2>WTC</h2>
+          <p>The peak of NEW YORK.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/d1pcFpvc/david_vives_PUOf_Ex_KWp_OU_unsplash.jpg" loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>MODERN ART</h2>
+          <p>Exclusive architectural design.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+ 
+ <div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+        <div class="premium-inner">
+            <p class="summary-text">
+                One World Trade Center (1WTC), or the "Freedom Tower," is the tallest building in the Western Hemisphere, soaring to a symbolic 
+
+
+ feet in Lower Manhattan. Opened in 2014, it represents resilience and modern design, featuring a 360-degree observation deck offering, as many visitors say, spectacular views. 
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Westminster, London</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Summer Tours</span>
+                    <span class="info-value">July 9 – Sept 27</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Heritage</span>
+                    <span class="info-value">Established 1703</span>
+                </div>
+            </div>
+
+            <div class="highlights-box">
+                <h4 class="highlight-title">Visitor Experience</h4>
+                <p>Visitors highly recommend the "One World Observatory" for panoramic views of NYC, Brooklyn, and New Jersey.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">The Concrete Jungle</h2>
+            <p class="cj-text">
+                New York City is a symphony of glass and steel. From the high-energy 
+                pulse of Midtown to the historic brownstones of the West Village, 
+                every corner reveals a new layer of the world's most iconic skyline.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  <div class="divider"></div>
+<div class="cinzel-title reveal">CENTRAL PARK.</div>
+
+<div class="luxury-container reveal">
+  <div class="luxury-viewport">
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/SKZpTjv0/marekr_central_park_5810398.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>CENTRAL PARK</h2>
+          <p>New York's most beautiful place.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/LXnFrRcB/marekr_park_5810400.jpg" loading="lazy" alt="Estate 2">
+        <div class="lux-overlay">
+          <h2>Beauty of NYC</h2>
+          <p>The peak of luxury living.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/hj6Rn6nk/csr_ch_city_3832683.jpg" loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>A maasive area</h2>
+          <p>Exclusive architectural design.</p>
+        </div>
+      </div>
+        
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+   <div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+        <div class="premium-inner">
+            <p class="summary-text">
+                Central Park is a massive 843-acre iconic green oasis in the heart of Manhattan, offering a scenic,, peaceful escape from city life with lakes, walking paths, and famous landmarks like Bethesda Terrace. Visitors frequently describe it as a magical, "must-see" destination, perfect for walking, picnics, and scenic views in any season, particularly during fall.  
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Westminster, London</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Summer Tours</span>
+                    <span class="info-value">July 9 – Sept 27</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Heritage</span>
+                    <span class="info-value">Established 1703</span>
+                </div>
+            </div>
+
+            <div class="highlights-box">
+                <h4 class="highlight-title">Visitor Experience</h4>
+                <p>
+Atmosphere: Described as a peaceful, "magical" oasis and a necessary contrast to the bustling NYC streets.
+Activities: Popular activities include strolling, running around the reservoir, renting rowboats, visiting the zoo, and enjoying ice skating.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">The Concrete Jungle</h2>
+            <p class="cj-text">
+                New York City is a symphony of glass and steel. From the high-energy 
+                pulse of Midtown to the historic brownstones of the West Village, 
+                every corner reveals a new layer of the world's most iconic skyline.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+   
+    <div class="divider"></div>
+<div class="cinzel-title reveal">TIME SQUARE.</div>
+
+<div class="luxury-container reveal">
+  <div class="luxury-viewport">
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+  <img src="https://i.postimg.cc/HsQ1G6hz/anthony_rosset_5r5554u_m_Ho_unsplash.jpg" alt="Estate 1" loading="lazy">
+  <div class="lux-overlay">
+    <h2>TIME-SQUARE</h2>
+    <p>New York's most crowded place.</p>
+  </div>
+</div>
+
+<div class="lux-slide">
+  <img src="https://i.postimg.cc/3r0H18jb/claudio_schwarz_EGzy_Jk2ju_Po_unsplash.jpg" alt="Estate 2" loading="lazy">
+  <div class="lux-overlay">
+    <h2>TIME SQUARE</h2>
+    <p>The peak of luxury living.</p>
+  </div>
+</div>
+
+<div class="lux-slide">
+  <img src="https://i.postimg.cc/Cxgx2f5P/andreas_niendorf_l8yp_Mi_U1Hio_unsplash.jpg" alt="Estate 3" loading="lazy">
+  <div class="lux-overlay">
+    <h2>NIGHT LIFE VIEW</h2>
+    <p>Exclusive architectural design.</p>
+  </div>
+</div>
+        
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+        <div class="premium-inner">
+            <p class="summary-text">
+                Times Square in NYC is the vibrant, chaotic "Crossroads of the World," known for massive digital billboards, Broadway theaters, and bustling pedestrian zones. It is a high-energy tourist hub offering sensory overload with bright lights and street performers. Visitors find it a must-see for photos and energy, though it is noisy and often considered a tourist trap. 
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Westminster, London</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Summer Tours</span>
+                    <span class="info-value">July 9 – Sept 27</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Heritage</span>
+                    <span class="info-value">Established 1703</span>
+                </div>
+            </div>
+
+            <div class="highlights-box">
+                <h4 class="highlight-title">Visitor Experience</h4>
+                <p>Pros: Exciting atmosphere, iconic bright lights, central to Broadway, and great for people-watching.
+Cons: Overwhelming crowds, loud, expensive, and frequented by aggressive street performers/costume characters.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">The Concrete Jungle</h2>
+            <p class="cj-text">
+                New York City is a symphony of glass and steel. From the high-energy 
+                pulse of Midtown to the historic brownstones of the West Village, 
+                every corner reveals a new layer of the world's most iconic skyline.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  
+ <div class="divider"></div>
+<div class="cinzel-title reveal">Brooklyn-Bridge.</div>
+
+<div class="luxury-container reveal">
+  <div class="luxury-viewport">
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/RFFr8vc9/esteban_chinchilla_XV6IKEtkp2Q_unsplash.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>BROOKLYN BRIDGE</h2>
+          <p>World's most expensive Estate.</p>
+        </div>
+      </div>
+      
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/PrGnFg21/alexander_rotker_s_Q4Fsom_XEs_unsplash.jpg" loading="lazy" alt="Estate 2">
+        <div class="lux-overlay">
+          <h2>BROOKLYN BRIDGE</h2>
+          <p>The peak of Ancient era.</p>
+        </div>
+      </div>
+
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/LXTXk4m4/colton_duke_UGw4ow_Zl_PD8_unsplash.jpg" loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>BROOKLYN BRIDGE</h2>
+          <p>Exclusive architectural design.</p>
+        </div>
+      </div>
+            </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+        <div class="premium-inner">
+            <p class="summary-text">
+                Completed in 1883, the Brooklyn Bridge is an iconic, neo-Gothic suspension bridge connecting Manhattan and Brooklyn. Renowned for its stone towers and steel cables, it offers panoramic skyline views for pedestrians, cyclists, and motorists. It is considered a must-visit, historic landmark featuring a safe, elevated walkway. 
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Westminster, London</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Summer Tours</span>
+                    <span class="info-value">July 9 – Sept 27</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Heritage</span>
+                    <span class="info-value">Established 1703</span>
+                </div>
+            </div>
+
+            <div class="highlights-box">
+                <h4 class="highlight-title">Visitor Experience</h4>
+                <p>Stunning Views: Visitors frequently describe the views of the Manhattan skyline as "magnificent" and "iconic," especially during sunset.
+Crowd Management: It can get very crowded, so early morning is recommended to avoid heavy foot traffic and vendors.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">The Concrete Jungle</h2>
+            <p class="cj-text">
+                New York City is a symphony of glass and steel. From the high-energy 
+                pulse of Midtown to the historic brownstones of the West Village, 
+                every corner reveals a new layer of the world's most iconic skyline.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  
+       <div class="divider"></div>
+<div class="cinzel-title reveal">The Historic Place of NYC.</div>
+
+<div class="luxury-container reveal">
+  <div class="luxury-viewport">
+    <!-- COUNTER -->
+    <div class="lux-counter">
+      <span class="current">01</span> / 
+      <span class="total">05</span>
+    </div>
+
+    <div class="luxury-wrapper" data-index="0">
+      
+       <div class="lux-slide">
+        <img src="https://i.postimg.cc/MKyJk9FR/pierre_blache_VMNG8BYFQfs_unsplash.jpg" loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>STATUE OF LIBERTY</h2>
+          <p>Exclusive architectural design.</p>
+        </div>
+      </div>
+        <div class="lux-slide">
+        <img src="https://i.postimg.cc/MKkJrCdy/juan_mayobre_IAh_W7a4p_WA_unsplash.jpg" loading="lazy" alt="Estate 1">
+        <div class="lux-overlay">
+          <h2>PRENTENDS HISTORY</h2>
+          <p>HISTORICAL SIGNIFICANCE.</p>
+        </div>
+      </div>
+      <div class="lux-slide">
+        <img src="https://i.postimg.cc/RCJzdSQV/barth_bailey_s0di82c_Ri_UQ_unsplash.jpg" loading="lazy" alt="Estate 3">
+        <div class="lux-overlay">
+          <h2>SIGN OF LIBERAL</h2>
+          <p>Exclusive architectural design.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="lux-nav lux-prev" onclick="moveSmooth(this, -1)">&#10094;</button>
+    <button class="lux-nav lux-next" onclick="moveSmooth(this, 1)">&#10095;</button>
+    <!-- DOTS -->
+    <div class="lux-dots"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="lux-progress">
+      <div class="lux-progress-bar"></div>
+    </div>
+  </div>
+</div>
+<div class="lora-title">
+
+
+</div>
+<div class="divider"></div>
+<div class="brief-wrapper">
+    <div class="brief-toggle" onclick="toggleBrief(this)">
+        <span class="label">Brief Description</span>
+        <span class="arrow">▼</span>
+    </div>
+
+    <div class="brief-content">
+        <div class="premium-inner">
+            <p class="summary-text">
+                The Statue of Liberty in New York Harbor is a 305-foot copper monument dedicated in 1886, representing freedom, democracy, and international friendship. Designed by Bartholdi and engineered by Eiffel, it features Lady Liberty with a torch and tablet, attracting millions for its historical significance and panoramic city views. 
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Westminster, London</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Summer Tours</span>
+                    <span class="info-value">July 9 – Sept 27</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Heritage</span>
+                    <span class="info-value">Established 1703</span>
+                </div>
+            </div>
+
+            <div class="highlights-box">
+                <h4 class="highlight-title">Visitor Experience</h4>
+                <p>Must-See Icon: Most reviews describe it as a "magnificent" and "breathtaking" experience.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="cj-wrapper">
+    <div class="cj-trigger" onclick="toggleJungle(this)">
+        <span class="cj-label">BRIEF DESCRIPTION</span>
+        <div class="cj-plus">+</div>
+    </div>
+
+    <div class="cj-content">
+        <div class="cj-inner">
+            <h2 class="cj-title">The Concrete Jungle</h2>
+            <p class="cj-text">
+                New York City is a symphony of glass and steel. From the high-energy 
+                pulse of Midtown to the historic brownstones of the West Village, 
+                every corner reveals a new layer of the world's most iconic skyline.
+            </p>
+            <div class="cj-line"></div>
+        </div>
+    </div>
+</div>
+  
+    
+    
+<section class="premium-credit">
+    <div class="credit-divider"></div>
+    <div class="credit-content">
+        <span class="curated-text">Curated & Crafted by</span>
+        <h3 class="brand-signature">Aryan Singh / freelancer</h3>
+        
+        <div class="social-row">
+            <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw==" class="social-link">Instagram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Portfolio</a>
+        </div>
+
+        <p class="credit-year">© 2026 Architectural Excellence</p>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-section brand-info">
+            <h2 class="logo"><span class="yellow">LUXURY</span><span class="red-text">Estates</span></h2>
+            <p class="description">
+                Redefining elegance and luxury. We provide the world's most exclusive famous gallery for the modern architect enthusiast.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/premiumweb07?igsh=MWo0YnNmMGJyYnJmNw=="><i class="fab fa-instagram"></i></a>
+                <a href="#homepage"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#homepage">Gallery</a></li>
+                <li><a href="exclusive.html">Most Expensive</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Credits for images</h3>
+            <div class="accent-line"></div>
+            <ul class="links-list">
+                <li><a href="https://postimages.org/">Post Images</a></li>
+                <li><a href="https://unsplash.com">Unsplash</a></li>
+                <li><a href="https://pixabay.com">Pixaby</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Get In Touch</h3>
+            <div class="accent-line"></div>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> premiumweb@gmail.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> Chhattisgarh, INDIA</li>
+                <li><i class="fas fa-phone"></i> +91 77249 77137</li>
+            </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <div class="accent-line"></div>
+            <p>Subscribe to get updates on new arrivals.</p>
+            <div class="input-group">
+                <input type="email" placeholder="Your Email">
+                <button class="join-btn">Join</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Luxury Estates Website. Designed by Aryan Kumar Singh.</p>
+    </div>
+</footer>
+
+<script src="global-body.js"></script>
+<script src="main-specific.js"></script>
+<script src="lazy-loading.js"></script>
+       
+    </body>
+</html>
