@@ -375,7 +375,7 @@ body {
   position: fixed;
   top: 0;
   right: 0; /* keep it 0 */
-  width: min(450px, 100%);
+  width: min(450px, 50%);
   height: 100vh;
 
   background: rgba(5, 5, 5, 0.95);
