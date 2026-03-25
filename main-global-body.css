@@ -376,7 +376,7 @@ body {
 .side-nav {
   position: fixed;
   top: 0;
-  right: -350px; /* Hidden off-screen */
+  right: -100%; /* Hidden off-screen */
   width: 50%;
   height: 100vh;
   background: rgba(5, 5, 5, 0.85);
