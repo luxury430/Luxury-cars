@@ -1,0 +1,425 @@
+   .faq-body {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --accent-color: #c5a059; /* Muted Gold */
+            --border-color: #e0e0e0;
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        
+
+        .container3 {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        header2 {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        h3 {
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        #faqSearch {
+            width: 100%;
+            padding: 15px 0;
+            border: none;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        #faqSearch:focus {
+            border-color: var(--accent-color);
+        }
+
+        .category-title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent-color);
+            margin: 60px 0 30px 0;
+            border-bottom: 1px solid #f5f5f5;
+            padding-bottom: 10px;
+        }
+
+        /* Accordion Style */
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+            outline: none;
+    -webkit-tap-highlight-color: transparent;
+        }
+
+        .faq-question:hover {
+            color: var(--accent-color);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+            font-size: 1rem;
+            color: #555;
+            padding-right: 10%;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding-bottom: 30px;
+            transition: max-height 1s ease-in;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            transition: transform 0.4s ease;
+            font-weight: 200;
+            outline: none;
+    -webkit-tap-highlight-color: transparent;
+        }
+
+        .faq-item.active .icon {
+            transform: rotate(45deg);
+            outline: none;
+    -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Concierge Section */
+        .concierge-footer {
+            margin-top: 100px;
+            padding: 60px;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        .concierge-footer h2 {
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 1px solid var(--text-color);
+            text-decoration: none;
+            color: var(--text-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 60px 20px; }
+            h1 { font-size: 1.8rem; }
+        }
+        .banner-hero2 {  
+    position: relative;  
+    width: 100%;  
+    min-height: clamp(320px, 60vh, 700px); /* responsive height */
+    overflow: hidden;  
+    background: #000;  
+    font-family: 'Segoe UI', Arial, sans-serif;  
+}  
+
+.banner-overlay2 {  
+    position: absolute;  
+    inset: 0;
+    background: 
+        linear-gradient(to right, rgba(0,0,0,0.9), transparent),
+        linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+    z-index: 2;  
+}  
+
+.banner-img2 {  
+    width: 100%;  
+    height: 50%;  
+    object-fit: cover;  
+    display: block;
+}  
+
+.banner-content2 {  
+    position: absolute;  
+    bottom: clamp(20px, 8%, 80px);  
+    left: clamp(16px, 6%, 80px);  
+    z-index: 10;  
+    max-width: 90%;
+}  
+
+.banner-title2 {  
+    color: #ffd700;  
+    font-size: clamp(28px, 6vw, 70px);  
+    font-weight: 800;  
+    text-transform: uppercase;  
+    letter-spacing: clamp(2px, 0.5vw, 6px);  
+    margin: 0 0 10px 0;  
+    line-height: 1.1;  
+}  
+
+.banner-subtitle2 {  
+    color: #ffffff;  
+    font-size: clamp(13px, 2vw, 20px);  
+    letter-spacing: clamp(1px, 0.3vw, 3px);  
+    text-transform: uppercase;  
+    opacity: 0.9;  
+    font-weight: 300;  
+    line-height: 1.5;  
+
+    border-left: 3px solid #ffd700;  
+    padding-left: 14px;  
+    max-width: 500px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .banner-hero2 {
+        min-height: 300px;
+    }
+    .banner-content2 {
+        bottom: 10%;
+        left: 5%;
+    }
+}
+.contact-body {
+    --primary: #1a1a1a;
+    --accent: #c5a059; /* Subtle Gold */
+    --bg: #fdfdfd;
+    --text-light: #666;
+    --serif: 'Cormorant Garamond', serif;
+    --sans: 'Inter', sans-serif;
+}
+
+/* 2. Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Container Layout */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* 4. Visual Side */
+.visual-side {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; /* fallback for small screens */
+}
+
+.visual-side img.overlay-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+    object-fit: cover; /* cover = fills container, contain = full image visible */
+    opacity: 0.6;
+    filter: grayscale(30%);
+    transition: transform 2s ease;
+}
+
+.visual-side:hover img.overlay-img {
+    transform: scale(1.05);
+}
+
+/* Brand Text Overlay */
+.brand-intro {
+    position: relative;
+    z-index: 2;
+    padding: 5vw;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.brand-intro h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.brand-intro p {
+    font-family: var(--sans);
+    font-size: 1rem;
+}
+
+/* 5. Form Side */
+.form-side {
+    padding: 8vw 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--bg);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.form-header {
+    margin-bottom: 3vw;
+    text-align: left;
+}
+
+.form-header p {
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-group {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+input, select, textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+    font-family: var(--sans);
+    font-size: 1rem;
+    background: transparent;
+    transition: border-color 0.4s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-bottom-color: var(--accent);
+}
+
+/* Submit Button */
+.btn-submit {
+    background: black;
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    font-family: var(--sans);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.btn-submit:hover {
+    background: black;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.2);
+}
+
+/* Concierge Section */
+.concierge-note {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.concierge-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #eee;
+    object-fit: cover;
+}
+
+.response-time {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* ==================== */
+/* 6. Responsive Design */
+/* ==================== */
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    .visual-side { min-height: 100vh; }
+}
+
+/* Medium Screens */
+@media (max-width: 1199px) {
+    .container { grid-template-columns: 1fr; }
+    .visual-side { height: 35vh; }
+    .form-side { padding: 6vw 8vw; }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .brand-intro h1 { font-size: clamp(1.5rem, 6vw, 2.5rem); }
+    .form-header p { font-size: 0.8rem; }
+    .btn-submit { padding: 0.8rem 2rem; font-size: 0.9rem; }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .brand-intro h1 { font-size: clamp(1.3rem, 7vw, 2rem); }
+    .form-side { padding: 4vw; }
+    .input-group { margin-bottom: 2rem; }
+    .concierge-note { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+}
+
+/* Extra Small Phones */
+@media (max-width: 360px) {
+    .brand-intro { padding: 3vw; }
+    .btn-submit { padding: 0.6rem 1.8rem; font-size: 0.85rem; }
+}
