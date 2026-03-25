@@ -350,7 +350,7 @@ body {
   position: fixed;
   top: 30px;
   right: 30px;
-  z-index: 2000;
+  z-index: 9000;
   cursor: pointer;
   background: rgba(255, 215, 0, 0.1);
   padding: 10px;
@@ -368,6 +368,7 @@ body {
   margin: 6px 0;
   transition: 0.4s;
 }
+
 .side-nav {
   position: fixed;
   top: 0;
@@ -391,71 +392,47 @@ body {
 
 /* Logo */
 .nav-logo {
+.nav-logo {
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  margin-bottom: clamp(30px, 6vw, 50px);
+
+/* Logo in Menu */
   color: #ffd700;
   letter-spacing: 2px;
-  margin-bottom: 40px;
+  
   border-bottom: 1px solid #333;
-  padding-bottom: 15px;
-
-  font-size: 1.3rem; /* fixed */
-  white-space: normal; /* ✅ allow wrapping */
-  word-break: break-word; /* ✅ break long words if needed */
-}/* Links */
-.nav-links a {  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem; /* fixed */
-
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  transition: 0.3s;
-
-  white-space: normal; /* ✅ allow wrapping */
-  overflow-wrap: break-word; /* ✅ safe wrapping */
+  padding-bottom: 20px;
 }
+.nav-logo span { color: #ff4d4d; }
+
 /* Navigation Links */
 .nav-links {
   list-style: none;
   padding: 0;
 }
 
-
+.nav-links li {
+  margin: clamp(15px, 3vw, 25px) 0;
+}
 
 .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: clamp(0.9rem, 2vw, 1.5rem); /* responsive text size */
-    
-    display: flex;
-    align-items: center;
-    gap: clamp(6px, 1.5vw, 12px); /* responsive spacing between icon & text */
-    
-    transition: 0.3s;
-    white-space: normal; /* allow wrapping if needed */
-    overflow-wrap: break-word;
+  color: #fff;
+  text-decoration: none;
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
+  letter-spacing: 1px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Nav Icons */
-.nav-links a i {
-    color: #ffd700;
-    font-size: clamp(0.7rem, 1.2vw, 1.4rem); /* icon scales with text */
-}
-
-/* Nav list spacing */
-.nav-links li {
-    margin: clamp(0.5rem, 2vw, 1.5rem) 0; /* responsive vertical spacing */
-}
-
-.nav-links a i {
-  color: #ffd700;
-  font-size: clamp(0.7rem,1vw,1.4rem);
-}
+.nav-links a i { color: #ffd700; font-size: 1rem; }
 
 .nav-links a:hover {
   color: #ffd700;
-  transform: translateX(8px);
+  transform: translateX(10px);
 }
+
 
 /* ---------- RESPONSIVE (NO TEXT CHANGE) ---------- */
 
