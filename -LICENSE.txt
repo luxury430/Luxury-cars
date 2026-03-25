@@ -1,0 +1,45 @@
+=====================================================
+                LUXURY WEBSITE LICENSE
+=====================================================
+
+Copyright (c) 2026 Aryan Singh
+All rights reserved.
+
+-----------------------------------------------------
+PERMITTED USAGE
+-----------------------------------------------------
+You are granted a non-exclusive license to:
+
+1. Use this website template for:
+   - Personal projects
+   - Client projects
+   - Commercial projects (with significant customization)
+
+2. Modify HTML, CSS, and JS to meet your project requirements.
+
+3. Integrate your own images, branding, and animations.
+
+-----------------------------------------------------
+RESTRICTIONS
+-----------------------------------------------------
+You may NOT:
+
+1. Resell, redistribute, or share this template “as-is”.
+2. Claim this template as your own original creation.
+3. Include this template in other free or paid products without significant modifications (e.g., custom images, colors, branding, or animations).
+
+-----------------------------------------------------
+DISCLAIMER
+-----------------------------------------------------
+- Provided “as-is” without warranties of any kind.
+- Author is not liable for any damages, data loss, or legal issues arising from its use.
+- Users are responsible for complying with third-party licenses for fonts, images, or other assets used in the template.
+
+-----------------------------------------------------
+CONTACT
+-----------------------------------------------------
+Author: Aryan Singh
+Email: premiumweb07@gmail.com 
+Website: N/A
+
+=====================================================
